@@ -1,0 +1,32 @@
+.service_main_box{
+    border: 1px solid #1BACD1;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.service_main_box > p{
+    text-align:left;
+    color: white;
+}
+.service_main_box >h5{
+    color: white;
+    text-align:left;
+}
+.d {
+    background-color: transparent !important; /* Set the background color to transparent */
+  }
+  .acordion_text{
+    color: white;
+    font-size: 22px;
+    font-family:'Times New Roman', Times, serif;
+    margin: 0px;
+  }
+  .service_text{
+    text-align: left;
+    color: white;
+  }
