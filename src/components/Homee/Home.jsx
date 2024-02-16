@@ -177,37 +177,27 @@ function Home() {
             <div className="overlay">
               <div className="overlay-content">
                 <div className="overlay_content_A">
-                  <Link className="overlay_link" 
-                  to='/service?fromHome=true'
-                 >
+                  <Link className="overlay_link" to="/service?fromHome=true">
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link"
-                   to='/service?fromHome=true'
-                  >
+                  <Link className="overlay_link" to="/service?fromHome=true">
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link"
-                   to='/service?fromHome=true'
-                  >
+                  <Link className="overlay_link" to="/service?fromHome=true">
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link"
-                   to='/service?fromHome=true'
-                  >
+                  <Link className="overlay_link" to="/service?fromHome=true">
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link"
-                   to='/service?fromHome=true'
-                  >
+                  <Link className="overlay_link" to="/service?fromHome=true">
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
@@ -222,37 +212,27 @@ function Home() {
             <div className="overlay">
               <div className="overlay-content">
                 <div className="overlay_content_A">
-                  <Link className="overlay_link"
-                   to='/service?fromHome=true'
-                  >
+                  <Link className="overlay_link" to="/service?fromHome=true">
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link"
-                   to='/service?fromHome=true'
-                  >
+                  <Link className="overlay_link" to="/service?fromHome=true">
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link"
-                   to='/service?fromHome=true'
-                  >
+                  <Link className="overlay_link" to="/service?fromHome=true">
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link"
-                   to='/service?fromHome=true'
-                  >
+                  <Link className="overlay_link" to="/service?fromHome=true">
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link"
-                   to='/service?fromHome=true'
-                  >
+                  <Link className="overlay_link" to="/service?fromHome=true">
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
@@ -267,37 +247,27 @@ function Home() {
             <div className="overlay">
               <div className="overlay-content">
                 <div className="overlay_content_A">
-                  <Link className="overlay_link"
-                   to='/service?fromHome=true'
-                  >
+                  <Link className="overlay_link" to="/service?fromHome=true">
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link"
-                   to='/service?fromHome=true'
-                  >
+                  <Link className="overlay_link" to="/service?fromHome=true">
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link"
-                   to='/service?fromHome=true'
-                  >
+                  <Link className="overlay_link" to="/service?fromHome=true">
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link"
-                   to='/service?fromHome=true'
-                  >
+                  <Link className="overlay_link" to="/service?fromHome=true">
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link"
-                   to='/service?fromHome=true'
-                  >
+                  <Link className="overlay_link" to="/service?fromHome=true">
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
@@ -319,60 +289,52 @@ function Home() {
             className="mySwiper"
           >
             <SwiperSlide>
-            <Link 
-            to={{ pathname: "/blog", state: { scrollToTop: true } }}
-            // to='blog'
-            >
-              {" "}
-              <div className="col-lg uppersection4_box1">
-                <img src={image11} />
-                <p>{t("ethicalConsiderations")}</p>
-              </div>
-            </Link>
+              <Link
+                to={{ pathname: "/blog", state: { scrollToTop: true } }}
+                // to='blog'
+              >
+                {" "}
+                <div className="col-lg uppersection4_box1">
+                  <img src={image11} />
+                  <p>{t("ethicalConsiderations")}</p>
+                </div>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-            <Link 
-            to={{ pathname: "/blog", state: { scrollToTop: true } }}
-            >
-              {" "}
-              <div className="col-lg uppersection4_box1">
-                <img src={image11} />
-                <p>{t("ethicalConsiderations")}</p>
-              </div>
-            </Link>
+              <Link to={{ pathname: "/blog", state: { scrollToTop: true } }}>
+                {" "}
+                <div className="col-lg uppersection4_box1">
+                  <img src={image11} />
+                  <p>{t("ethicalConsiderations")}</p>
+                </div>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-            <Link 
-            to={{ pathname: "/blog", state: { scrollToTop: true } }}
-            >
-              {" "}
-              <div className="col-lg uppersection4_box1">
-                <img src={image11} />
-                <p>{t("ethicalConsiderations")}</p>
-              </div>
-            </Link>
+              <Link to={{ pathname: "/blog", state: { scrollToTop: true } }}>
+                {" "}
+                <div className="col-lg uppersection4_box1">
+                  <img src={image11} />
+                  <p>{t("ethicalConsiderations")}</p>
+                </div>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-            <Link 
-            to={{ pathname: "/blog", state: { scrollToTop: true } }}
-            >
-              {" "}
-              <div className="col-lg uppersection4_box1">
-                <img src={image11} />
-                <p>{t("ethicalConsiderations")}</p>
-              </div>
-            </Link>
+              <Link to={{ pathname: "/blog", state: { scrollToTop: true } }}>
+                {" "}
+                <div className="col-lg uppersection4_box1">
+                  <img src={image11} />
+                  <p>{t("ethicalConsiderations")}</p>
+                </div>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-            <Link 
-            to={{ pathname: "/blog", state: { scrollToTop: true } }}
-            >
-              {" "}
-              <div className="col-lg uppersection4_box1">
-                <img src={image11} />
-                <p>{t("ethicalConsiderations")}</p>
-              </div>
-            </Link>
+              <Link to={{ pathname: "/blog", state: { scrollToTop: true } }}>
+                {" "}
+                <div className="col-lg uppersection4_box1">
+                  <img src={image11} />
+                  <p>{t("ethicalConsiderations")}</p>
+                </div>
+              </Link>
             </SwiperSlide>
           </Swiper>
         </div>

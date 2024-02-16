@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import "./navbar.css";
 import image1 from "../../asset/image/Vector.png";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Navbar() {
+  const {t} = useTranslation();
   const navigate = useNavigate();
   const [activeButton, setActiveButton] = useState(null);
   const location = useLocation();
@@ -61,7 +63,7 @@ function Navbar() {
                   to="/"
                   onClick={() => handleButtonClick("AI")}
                 >
-                  AI
+                {t("AI")}
                 </Link>
               </li>
               <li className="nav-item">
@@ -74,7 +76,7 @@ function Navbar() {
                   to="/aboutus"
                   onClick={() => handleButtonClick("About")}
                 >
-                  About
+                    {t("aboutus")}
                 </Link>
               </li>
               <li className="nav-item">
@@ -93,7 +95,7 @@ function Navbar() {
                   }}
                   onClick={() => handleButtonClick("Services")}
                 >
-                  Services
+                   {t("services")}
                 </Link>
               </li>
               <li className="nav-item">
@@ -106,7 +108,7 @@ function Navbar() {
                   to="/blog"
                   onClick={() => handleButtonClick("Blogs")}
                 >
-                  Blogs
+                    {t("blogs")}
                 </Link>
               </li>
               <li className="nav-item">
@@ -117,7 +119,7 @@ function Navbar() {
                   }`}
                   onClick={() => handleButtonClick("Light")}
                 >
-                  <h6>Contact us</h6>
+                 {t("contact_us")}
                 </button>
               </li>
             </ul>

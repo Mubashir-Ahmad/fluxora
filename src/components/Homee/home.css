@@ -1,9 +1,16 @@
 body {
   overflow-x: hidden;
 }
+@font-face {
+  font-family: 'Revive 80 Wide';
+  font-family: 'Revive 80 Phatt';
+  src: url('../../asset/fonts/Revive\ 80\ Wide.otf') format('opentype');
+  src: url('../../asset/fonts/Revive\ 80\ Phatt.otf') format('opentype');
+}
+
 .uppersection {
     position: relative;
-    height: 670px;
+    height: 100vh;
     overflow: hidden;
   }
   
@@ -110,15 +117,18 @@ body {
 .upersection1_content_SideA_P{
   color: white;
   text-align: center;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Revive 80 Wide';
   font-size: 55px;
+  font-weight: 600;
 }
 
 .upersection1_content_SideA_P2{
   color: white;
   text-align: left;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 25px;
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-family: 'Revive 80 Wide';
+  font-size: 35px;
   font-weight: 800;
 }
 .upersection1_content_SideB_P{
@@ -126,11 +136,11 @@ body {
   color: white;
 }
 .upersection1_content_SideB_Button{
-  background: #334d50;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #cbcaa5, #334d50);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #cbcaa5, #334d50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-color: white;
-  width: 140px;
+      background: #334d50;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #cbcaa5, #334d50);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #cbcaa5, #334d50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color: white;
+      width: 140px;
 }
 /* Upersection 2 */
 .upersection2_img {

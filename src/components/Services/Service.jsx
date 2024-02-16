@@ -6,18 +6,18 @@ import { useTranslation } from "react-i18next";
 function Service() {
   const { t } = useTranslation();
   useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+    window.scrollTo(0, 0);
   }, []);
   return (
     <>
       <div>
       <div className="aboutsection1 slide-inn">
-        <h3 className="servicesection1_heading">Our
+        <h3 className="servicesection1_heading">{t('our')}
         </h3> " "
-        <h3 className="servicesection1_heading2">Services</h3>
+        <h3 className="servicesection1_heading2">{t('services')}</h3>
       </div>
         <div className="container service_main_box sslide-in">
-          <h5>Content</h5>
+          <h5>{t('content')}</h5>
           <p>
             Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -36,7 +36,7 @@ function Service() {
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  <p className="acordion_text">ContentStrategy</p>
+                  <p className="acordion_text">{t('contentStrategy')}</p>
                 </button>
               </h2>
               <div
@@ -47,10 +47,7 @@ function Service() {
               >
                 <div className="accordion-body">
                 <p  className="service_text">
-                    Fluxora leverages advanced natural language processing to
-                    provide data-driven content strategy solutions, enabling
-                    businesses to optimize their digital content and engage
-                    their target audience effectively.
+                   {t("content_acordion")}
                   </p>
                 </div>
               </div>
@@ -65,7 +62,7 @@ function Service() {
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  <p className="acordion_text">ShortFormStrategy</p>
+                  <p className="acordion_text">{t("shortformstrategy")}</p>
                 </button>
               </h2>
               <div
@@ -76,10 +73,7 @@ function Service() {
               >
                 <div className="accordion-body">
                   <p className="service_text">
-                    Fluxora leverages advanced natural language processing to
-                    provide data-driven content strategy solutions, enabling
-                    businesses to optimize their digital content and engage
-                    their target audience effectively.
+                  {t("content_acordion")}
                   </p>
                 </div>
               </div>
@@ -94,7 +88,7 @@ function Service() {
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  <p className="acordion_text">AIGeneratedFacelessContent</p>
+                  <p className="acordion_text">{t("AIGeneratedFacelessContent")}</p>
                 </button>
               </h2>
               <div
@@ -105,10 +99,7 @@ function Service() {
               >
                 <div className="accordion-body">
                   <p className="service_text">
-                    Fluxora leverages advanced natural language processing to
-                    provide data-driven content strategy solutions, enabling
-                    businesses to optimize their digital content and engage
-                    their target audience effectively.
+                  {t("content_acordion")}
                   </p>
                 </div>
               </div>
@@ -123,7 +114,7 @@ function Service() {
                   aria-expanded="false"
                   aria-controls="collapseFour"
                 >
-                  <p className="acordion_text">ContentAutomatation</p>
+                  <p className="acordion_text">{t("ContentAutomatation")}</p>
                 </button>
               </h2>
               <div
@@ -134,10 +125,7 @@ function Service() {
               >
                 <div className="accordion-body">
                   <p className="service_text">
-                    Fluxora leverages advanced natural language processing to
-                    provide data-driven content strategy solutions, enabling
-                    businesses to optimize their digital content and engage
-                    their target audience effectively.
+                  {t("content_acordion")}
                   </p>
                 </div>
               </div>
@@ -145,7 +133,7 @@ function Service() {
           </div>
         </div>
         <div className="container service_main_box">
-          <h5>Content</h5>
+        <h5>{t('content')}</h5>
           <p>
             Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -164,7 +152,7 @@ function Service() {
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  <p className="acordion_text">ContentStrategy</p>
+                  <p className="acordion_text">{t('contentStrategy')}</p>
                 </button>
               </h2>
               <div
@@ -175,10 +163,7 @@ function Service() {
               >
                 <div className="accordion-body">
                 <p  className="service_text">
-                    Fluxora leverages advanced natural language processing to
-                    provide data-driven content strategy solutions, enabling
-                    businesses to optimize their digital content and engage
-                    their target audience effectively.
+                {t("content_acordion")}
                   </p>
                 </div>
               </div>
@@ -193,7 +178,7 @@ function Service() {
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  <p className="acordion_text">ShortFormStrategy</p>
+                  <p className="acordion_text">{t("shortformstrategy")}</p>
                 </button>
               </h2>
               <div
@@ -204,10 +189,7 @@ function Service() {
               >
                 <div className="accordion-body">
                   <p className="service_text">
-                    Fluxora leverages advanced natural language processing to
-                    provide data-driven content strategy solutions, enabling
-                    businesses to optimize their digital content and engage
-                    their target audience effectively.
+                  {t("content_acordion")}
                   </p>
                 </div>
               </div>
@@ -222,7 +204,7 @@ function Service() {
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  <p className="acordion_text">AIGeneratedFacelessContent</p>
+                  <p className="acordion_text">{t("AIGeneratedFacelessContent")}</p>
                 </button>
               </h2>
               <div
@@ -233,10 +215,7 @@ function Service() {
               >
                 <div className="accordion-body">
                   <p className="service_text">
-                    Fluxora leverages advanced natural language processing to
-                    provide data-driven content strategy solutions, enabling
-                    businesses to optimize their digital content and engage
-                    their target audience effectively.
+                  {t("content_acordion")}
                   </p>
                 </div>
               </div>
@@ -251,7 +230,7 @@ function Service() {
                   aria-expanded="false"
                   aria-controls="collapseFour"
                 >
-                  <p className="acordion_text">ContentAutomatation</p>
+                  <p className="acordion_text">{t("ContentAutomatation")}</p>
                 </button>
               </h2>
               <div
@@ -262,10 +241,7 @@ function Service() {
               >
                 <div className="accordion-body">
                   <p className="service_text">
-                    Fluxora leverages advanced natural language processing to
-                    provide data-driven content strategy solutions, enabling
-                    businesses to optimize their digital content and engage
-                    their target audience effectively.
+                  {t("content_acordion")}
                   </p>
                 </div>
               </div>
@@ -273,7 +249,7 @@ function Service() {
           </div>
         </div>
         <div className="container service_main_box">
-          <h5>Content</h5>
+        <h5>{t('content')}</h5>
           <p>
             Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -292,7 +268,7 @@ function Service() {
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  <p className="acordion_text">ContentStrategy</p>
+                  <p className="acordion_text">{t('contentStrategy')}</p>
                 </button>
               </h2>
               <div
@@ -303,10 +279,7 @@ function Service() {
               >
                 <div className="accordion-body">
                 <p  className="service_text">
-                    Fluxora leverages advanced natural language processing to
-                    provide data-driven content strategy solutions, enabling
-                    businesses to optimize their digital content and engage
-                    their target audience effectively.
+                {t("content_acordion")}
                   </p>
                 </div>
               </div>
@@ -321,7 +294,7 @@ function Service() {
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  <p className="acordion_text">ShortFormStrategy</p>
+                  <p className="acordion_text">{t("shortformstrategy")}</p>
                 </button>
               </h2>
               <div
@@ -332,10 +305,7 @@ function Service() {
               >
                 <div className="accordion-body">
                   <p className="service_text">
-                    Fluxora leverages advanced natural language processing to
-                    provide data-driven content strategy solutions, enabling
-                    businesses to optimize their digital content and engage
-                    their target audience effectively.
+                  {t("content_acordion")}
                   </p>
                 </div>
               </div>
@@ -350,7 +320,7 @@ function Service() {
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  <p className="acordion_text">AIGeneratedFacelessContent</p>
+                  <p className="acordion_text">{t("AIGeneratedFacelessContent")}</p>
                 </button>
               </h2>
               <div
@@ -361,10 +331,7 @@ function Service() {
               >
                 <div className="accordion-body">
                   <p className="service_text">
-                    Fluxora leverages advanced natural language processing to
-                    provide data-driven content strategy solutions, enabling
-                    businesses to optimize their digital content and engage
-                    their target audience effectively.
+                  {t("content_acordion")}
                   </p>
                 </div>
               </div>
@@ -379,7 +346,7 @@ function Service() {
                   aria-expanded="false"
                   aria-controls="collapseFour"
                 >
-                  <p className="acordion_text">ContentAutomatation</p>
+                  <p className="acordion_text">{t("ContentAutomatation")}</p>
                 </button>
               </h2>
               <div
@@ -390,10 +357,7 @@ function Service() {
               >
                 <div className="accordion-body">
                   <p className="service_text">
-                    Fluxora leverages advanced natural language processing to
-                    provide data-driven content strategy solutions, enabling
-                    businesses to optimize their digital content and engage
-                    their target audience effectively.
+                  {t("content_acordion")}
                   </p>
                 </div>
               </div>
