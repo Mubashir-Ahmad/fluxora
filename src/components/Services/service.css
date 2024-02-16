@@ -17,6 +17,18 @@
     color: white;
     text-align:left;
 }
+.servicesection1_heading {
+  color: #1BACD1;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+}
+.servicesection1_heading2 {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+}
 .d {
     background-color: transparent !important; /* Set the background color to transparent */
   }

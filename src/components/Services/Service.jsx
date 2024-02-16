@@ -1,17 +1,22 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./service.css";
 import Footer from "../footer/Footer";
 import { useTranslation } from "react-i18next";
 
 function Service() {
   const { t } = useTranslation();
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
   return (
     <>
       <div>
-        <div className="aboutsection1">
-          <h3>Our Services</h3>
-        </div>
-        <div className="container service_main_box">
+      <div className="aboutsection1 slide-inn">
+        <h3 className="servicesection1_heading">Our
+        </h3> " "
+        <h3 className="servicesection1_heading2">Services</h3>
+      </div>
+        <div className="container service_main_box sslide-in">
           <h5>Content</h5>
           <p>
             Adipiscing elit, sed do eiusmod tempor incididunt ut labore et

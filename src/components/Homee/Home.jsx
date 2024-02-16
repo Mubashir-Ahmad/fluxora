@@ -25,8 +25,10 @@ import image13 from "../../asset/image/person.png";
 import image14 from "../../asset/image/a8.png";
 import Footer from "../footer/Footer";
 import Navbar from "../Navbar/Navbar";
+import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 function Home() {
+  const navigate = useNavigate();
   const { t } = useTranslation();
   const upperSectionRef = useRef(null);
   const belowSectionRef = useRef(null);
@@ -60,7 +62,7 @@ function Home() {
         observer.unobserve(bottomRef.current);
       }
     };
-  },[belowSectionRef]);
+  }, [belowSectionRef]);
   useEffect(() => {
     const handleScroll = () => {
       const scrollValue = window.scrollY;
@@ -155,7 +157,6 @@ function Home() {
               className="btn btn-light upersection1_content_SideB_Button"
             >
               Light
-              
             </button>
           </div>
         </div>
@@ -176,27 +177,37 @@ function Home() {
             <div className="overlay">
               <div className="overlay-content">
                 <div className="overlay_content_A">
-                  <Link className="overlay_link" to='/service?fromHome=true'>
+                  <Link className="overlay_link" 
+                  to='/service?fromHome=true'
+                 >
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link">
+                  <Link className="overlay_link"
+                   to='/service?fromHome=true'
+                  >
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link">
+                  <Link className="overlay_link"
+                   to='/service?fromHome=true'
+                  >
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link">
+                  <Link className="overlay_link"
+                   to='/service?fromHome=true'
+                  >
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link">
+                  <Link className="overlay_link"
+                   to='/service?fromHome=true'
+                  >
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
@@ -211,27 +222,37 @@ function Home() {
             <div className="overlay">
               <div className="overlay-content">
                 <div className="overlay_content_A">
-                  <Link className="overlay_link">
+                  <Link className="overlay_link"
+                   to='/service?fromHome=true'
+                  >
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link">
+                  <Link className="overlay_link"
+                   to='/service?fromHome=true'
+                  >
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link">
+                  <Link className="overlay_link"
+                   to='/service?fromHome=true'
+                  >
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link">
+                  <Link className="overlay_link"
+                   to='/service?fromHome=true'
+                  >
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link">
+                  <Link className="overlay_link"
+                   to='/service?fromHome=true'
+                  >
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
@@ -246,27 +267,37 @@ function Home() {
             <div className="overlay">
               <div className="overlay-content">
                 <div className="overlay_content_A">
-                  <Link className="overlay_link">
+                  <Link className="overlay_link"
+                   to='/service?fromHome=true'
+                  >
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link">
+                  <Link className="overlay_link"
+                   to='/service?fromHome=true'
+                  >
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link">
+                  <Link className="overlay_link"
+                   to='/service?fromHome=true'
+                  >
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link">
+                  <Link className="overlay_link"
+                   to='/service?fromHome=true'
+                  >
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
-                  <Link className="overlay_link">
+                  <Link className="overlay_link"
+                   to='/service?fromHome=true'
+                  >
                     <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
@@ -288,39 +319,60 @@ function Home() {
             className="mySwiper"
           >
             <SwiperSlide>
+            <Link 
+            to={{ pathname: "/blog", state: { scrollToTop: true } }}
+            // to='blog'
+            >
               {" "}
               <div className="col-lg uppersection4_box1">
                 <img src={image11} />
                 <p>{t("ethicalConsiderations")}</p>
               </div>
+            </Link>
             </SwiperSlide>
             <SwiperSlide>
+            <Link 
+            to={{ pathname: "/blog", state: { scrollToTop: true } }}
+            >
               {" "}
               <div className="col-lg uppersection4_box1">
                 <img src={image11} />
                 <p>{t("ethicalConsiderations")}</p>
               </div>
+            </Link>
             </SwiperSlide>
             <SwiperSlide>
+            <Link 
+            to={{ pathname: "/blog", state: { scrollToTop: true } }}
+            >
               {" "}
               <div className="col-lg uppersection4_box1">
                 <img src={image11} />
                 <p>{t("ethicalConsiderations")}</p>
               </div>
+            </Link>
             </SwiperSlide>
             <SwiperSlide>
+            <Link 
+            to={{ pathname: "/blog", state: { scrollToTop: true } }}
+            >
               {" "}
               <div className="col-lg uppersection4_box1">
                 <img src={image11} />
                 <p>{t("ethicalConsiderations")}</p>
               </div>
+            </Link>
             </SwiperSlide>
             <SwiperSlide>
+            <Link 
+            to={{ pathname: "/blog", state: { scrollToTop: true } }}
+            >
               {" "}
               <div className="col-lg uppersection4_box1">
                 <img src={image11} />
                 <p>{t("ethicalConsiderations")}</p>
               </div>
+            </Link>
             </SwiperSlide>
           </Swiper>
         </div>

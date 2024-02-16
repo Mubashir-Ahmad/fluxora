@@ -12,7 +12,7 @@ function Navbar() {
     navigate("/contactus");
     setActiveButton(button);
   };
-
+  console.log("hello", location.search);
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
@@ -37,11 +37,26 @@ function Navbar() {
           >
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
               <li className="nav-item">
-                <Link
+                {/* <Link
                   className={`nav-link ${activeButton === "AI" && "active"}`}
                   style={{
                     border:
                       activeButton === "AI" ? "1px solid #1BACD1" : "none",
+                  }}
+                  to="/"
+                  onClick={() => handleButtonClick("AI")}
+                >
+                  AI
+                </Link> */}
+                <Link
+                  className={`nav-link ${
+                    activeButton === "AI" && !fromHome && "active"
+                  }`}
+                  style={{
+                    border:
+                      activeButton === "AI" && !fromHome
+                        ? "1px solid #1BACD1"
+                        : "none",
                   }}
                   to="/"
                   onClick={() => handleButtonClick("AI")}
@@ -66,11 +81,13 @@ function Navbar() {
                 <Link
                   to="/service"
                   className={`nav-link ${
-                    activeButton === "Services" ? "active" : ""
+                    fromHome === "true" || activeButton === "Services"
+                      ? "active"
+                      : ""
                   }`}
                   style={{
                     border:
-                      activeButton === "Services"
+                      fromHome === "true" || activeButton === "Services"
                         ? "1px solid #1BACD1"
                         : "none",
                   }}

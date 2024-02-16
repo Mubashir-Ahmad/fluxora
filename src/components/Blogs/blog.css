@@ -15,6 +15,9 @@
 .blog-detail{
     padding: 50px 60px;
 }
+.blogdetail_link{
+    text-decoration: none;
+}
 .blog-detail-box{
     display: flex;
     flex-direction: column;
@@ -73,10 +76,17 @@
     color: white;
 }
 
-
-
-
-
+@keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  } 
+.sslide-in {
+    animation: slideInFromBottom 1.5s ease-in-out;
+  }
 
 
 

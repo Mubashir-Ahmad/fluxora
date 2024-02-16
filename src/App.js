@@ -8,6 +8,7 @@ import Aboutus from './components/Aboutus/Aboutus';
 import Service from './components/Services/Service';
 import Blog from './components/Blogs/Blog';
 import BlogDetail from './components/Blogs/BlogDetail';
+import Contactus from './components/Contactus/Contactus';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/service" element={<Service/>} />
             <Route path="/blog" element={<Blog/>} />
             <Route path="/blogdetail" element={<BlogDetail/>} />
+            <Route path="/contactus" element={<Contactus/>} />
        </Routes>
       </Router>
     </div>

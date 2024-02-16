@@ -6,7 +6,7 @@ import image2 from "../../asset/image/Image1.png";
 function BlogDetail() {
   return (
     <>
-      <div className="container-fluid blog-detail">
+      <div className="container-fluid blog-detail sslide-in">
         <div className="row">
           <div className="blog-detail-box">
             <h2 className="blog-detail-box-heading">
