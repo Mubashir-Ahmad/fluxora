@@ -8,8 +8,8 @@ import "swiper/modules";
 import { Link } from "react-router-dom";
 import { Autoplay } from "swiper/modules";
 import { Navigation } from "swiper/modules";
-import image15 from '../../asset/image/a9.png'
-import image16 from '../../asset/image/a10.png'
+import image15 from "../../asset/image/a9.png";
+import image16 from "../../asset/image/a10.png";
 import image2 from "../../asset/image/Group.png";
 import image3 from "../../asset/image/a1.png";
 import image4 from "../../asset/image/partner-1_1.png.png";
@@ -33,21 +33,53 @@ function Home() {
   const [isZoomed, setIsZoomed] = useState(false);
   const [slidesPerView, setSlidesPerView] = useState(2);
   const [slidesPerVieww, setSlidesPerVieww] = useState(3);
+  const [isBottomAnimationVisible, setIsBottomAnimationVisible] =
+    useState(false);
+  const bottomRef = useRef(null);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsBottomAnimationVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.4, // Adjust as needed
+      }
+    );
+
+    if (bottomRef.current) {
+      observer.observe(bottomRef.current);
+    }
+
+    return () => {
+      if (bottomRef.current) {
+        observer.unobserve(bottomRef.current);
+      }
+    };
+  },[belowSectionRef]);
   useEffect(() => {
     const handleScroll = () => {
       const scrollValue = window.scrollY;
       let scaleValue = 1 + scrollValue * 0.009;
 
       // Cap the scale value to a maximum value to prevent it from increasing indefinitely
-      const maxScaleValue = 2; // Adjust this value as needed
+      const maxScaleValue = 9; // Adjust this value as needed
       scaleValue = Math.min(scaleValue, maxScaleValue);
+      if (upperSectionRef.current) {
+        upperSectionRef.current.classList.toggle("zoomed", scrollValue > 100);
+        setIsZoomed(scrollValue > 100);
+        upperSectionRef.current.style.transform = `scale(${scaleValue})`;
+      }
+      // upperSectionRef.current.classList.toggle("zoomed", scrollValue > 80);
+      // setIsZoomed(scrollValue > 80);
 
-      upperSectionRef.current.classList.toggle("zoomed", scrollValue > 70);
-      setIsZoomed(scrollValue > 70);
+      // upperSectionRef.current.style.transform = `scale(${scaleValue})`;
 
-      upperSectionRef.current.style.transform = `scale(${scaleValue})`;
-
-      if (scrollValue > 50) {
+      if (scrollValue > 100) {
         // If the wave has faded away, show the below section
         belowSectionRef.current.classList.add("fadeIn");
       } else {
@@ -68,7 +100,7 @@ function Home() {
       }
       if (window.innerWidth < 600) {
         setSlidesPerVieww(1);
-      } 
+      }
     };
     handleResize();
 
@@ -93,7 +125,15 @@ function Home() {
         </div>
         <h3 className="uppersection_heading">Fluxora</h3>
       </div>
-      <div className="container" ref={belowSectionRef}>
+      <div
+        ref={(node) => {
+          bottomRef.current = node;
+          belowSectionRef.current = node;
+        }}
+        className={`bottom-animation container ${
+          isBottomAnimationVisible ? "slide-iin" : ""
+        }`}
+      >
         <div className="row">
           <p className="upersection1_content_SideA_P ">{t("ourStory")}</p>
         </div>
@@ -103,7 +143,7 @@ function Home() {
               {t("ourStoryDescription")}
             </p>
           </div>
-          <div className="col-md">
+          <div className="col-md ourstory">
             <p className="upersection1_content_SideB_P">
               {t("contentDescription")}
             </p>
@@ -115,6 +155,7 @@ function Home() {
               className="btn btn-light upersection1_content_SideB_Button"
             >
               Light
+              
             </button>
           </div>
         </div>
@@ -133,40 +174,30 @@ function Home() {
             <p>{t("contentDescription")}</p>
             <img src={image9} />
             <div className="overlay">
-            <div className="overlay-content">
+              <div className="overlay-content">
                 <div className="overlay_content_A">
-                  <Link className="overlay_link">
-                  <p>
-                  {t("contentStrategy")}
-                  </p>
+                  <Link className="overlay_link" to='/service?fromHome=true'>
+                    <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
                   <Link className="overlay_link">
-                  <p>
-                  {t("contentStrategy")}
-                  </p>
+                    <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
                   <Link className="overlay_link">
-                  <p>
-                  {t("contentStrategy")}
-                  </p>
+                    <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
                   <Link className="overlay_link">
-                  <p>
-                  {t("contentStrategy")}
-                  </p>
+                    <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
                   <Link className="overlay_link">
-                  <p>
-                  {t("contentStrategy")}
-                  </p>
+                    <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <img src={image10} />
@@ -178,40 +209,30 @@ function Home() {
             <p>{t("contentDescription")}</p>
             <img src={image9} />
             <div className="overlay">
-            <div className="overlay-content">
+              <div className="overlay-content">
                 <div className="overlay_content_A">
                   <Link className="overlay_link">
-                  <p>
-                  {t("contentStrategy")}
-                  </p>
+                    <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
                   <Link className="overlay_link">
-                  <p>
-                  {t("contentStrategy")}
-                  </p>
+                    <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
                   <Link className="overlay_link">
-                  <p>
-                  {t("contentStrategy")}
-                  </p>
+                    <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
                   <Link className="overlay_link">
-                  <p>
-                  {t("contentStrategy")}
-                  </p>
+                    <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
                   <Link className="overlay_link">
-                  <p>
-                  {t("contentStrategy")}
-                  </p>
+                    <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <img src={image10} />
@@ -226,37 +247,27 @@ function Home() {
               <div className="overlay-content">
                 <div className="overlay_content_A">
                   <Link className="overlay_link">
-                  <p>
-                  {t("contentStrategy")}
-                  </p>
+                    <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
                   <Link className="overlay_link">
-                  <p>
-                  {t("contentStrategy")}
-                  </p>
+                    <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
                   <Link className="overlay_link">
-                  <p>
-                  {t("contentStrategy")}
-                  </p>
+                    <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
                   <Link className="overlay_link">
-                  <p>
-                  {t("contentStrategy")}
-                  </p>
+                    <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <div className="overlay_content_A">
                   <Link className="overlay_link">
-                  <p>
-                  {t("contentStrategy")}
-                  </p>
+                    <p>{t("contentStrategy")}</p>
                   </Link>
                 </div>
                 <img src={image10} />
@@ -269,12 +280,13 @@ function Home() {
         <div className="row" style={{ padding: "30px 0px" }}>
           <h4 className="uppersection3_heading">{t("blogs")}</h4>
         </div>
-          <div className="row" style={{ justifyContent: "center"}}>
-        <Swiper
-         slidesPerView={slidesPerVieww}
-         modules={[ Autoplay]}
-         autoplay={{ delay: 5000 }}
-         className="mySwiper">
+        <div className="row" style={{ justifyContent: "center" }}>
+          <Swiper
+            slidesPerView={slidesPerVieww}
+            modules={[Autoplay]}
+            autoplay={{ delay: 5000 }}
+            className="mySwiper"
+          >
             <SwiperSlide>
               {" "}
               <div className="col-lg uppersection4_box1">
@@ -310,8 +322,8 @@ function Home() {
                 <p>{t("ethicalConsiderations")}</p>
               </div>
             </SwiperSlide>
-        </Swiper>
-          </div>
+          </Swiper>
+        </div>
       </div>
       <div className="uppersection5">
         <div className="heading_content">
@@ -336,28 +348,11 @@ function Home() {
                   <p className="swiper_p3">{t("contentDescription")}</p>
                 </div>
                 <div className="swiper_box1">
-                <img src={image16} />
-                <div className="swiper_box2">
-                  <p className="swiper_box2_para">Kenn Gallagher</p>
-                  <p className="swiper_box2_para1">Found & Leader</p>
-                </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="swipper_box1">
-              <div className="swiper_content">
-                <img src={image15} />
-                <div className="swiper_box">
-                  <p className="swiper_p3">{t("contentDescription")}</p>
-                </div>
-                <div className="swiper_box1">
-                <img src={image16} />
-                <div className="swiper_box2">
-                  <p className="swiper_box2_para">Kenn Gallagher</p>
-                  <p className="swiper_box2_para1">Found & Leader</p>
-                </div>
+                  <img src={image16} />
+                  <div className="swiper_box2">
+                    <p className="swiper_box2_para">Kenn Gallagher</p>
+                    <p className="swiper_box2_para1">Found & Leader</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -370,28 +365,11 @@ function Home() {
                   <p className="swiper_p3">{t("contentDescription")}</p>
                 </div>
                 <div className="swiper_box1">
-                <img src={image16} />
-                <div className="swiper_box2">
-                  <p className="swiper_box2_para">Kenn Gallagher</p>
-                  <p className="swiper_box2_para1">Found & Leader</p>
-                </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="swipper_box1">
-              <div className="swiper_content">
-                <img src={image15} />
-                <div className="swiper_box">
-                  <p className="swiper_p3">{t("contentDescription")}</p>
-                </div>
-                <div className="swiper_box1">
-                <img src={image16} />
-                <div className="swiper_box2">
-                  <p className="swiper_box2_para">Kenn Gallagher</p>
-                  <p className="swiper_box2_para1">Found & Leader</p>
-                </div>
+                  <img src={image16} />
+                  <div className="swiper_box2">
+                    <p className="swiper_box2_para">Kenn Gallagher</p>
+                    <p className="swiper_box2_para1">Found & Leader</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -404,28 +382,11 @@ function Home() {
                   <p className="swiper_p3">{t("contentDescription")}</p>
                 </div>
                 <div className="swiper_box1">
-                <img src={image16} />
-                <div className="swiper_box2">
-                  <p className="swiper_box2_para">Kenn Gallagher</p>
-                  <p className="swiper_box2_para1">Found & Leader</p>
-                </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="swipper_box1">
-              <div className="swiper_content">
-                <img src={image15} />
-                <div className="swiper_box">
-                  <p className="swiper_p3">{t("contentDescription")}</p>
-                </div>
-                <div className="swiper_box1">
-                <img src={image16} />
-                <div className="swiper_box2">
-                  <p className="swiper_box2_para">Kenn Gallagher</p>
-                  <p className="swiper_box2_para1">Found & Leader</p>
-                </div>
+                  <img src={image16} />
+                  <div className="swiper_box2">
+                    <p className="swiper_box2_para">Kenn Gallagher</p>
+                    <p className="swiper_box2_para1">Found & Leader</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -438,11 +399,11 @@ function Home() {
                   <p className="swiper_p3">{t("contentDescription")}</p>
                 </div>
                 <div className="swiper_box1">
-                <img src={image16} />
-                <div className="swiper_box2">
-                  <p className="swiper_box2_para">Kenn Gallagher</p>
-                  <p className="swiper_box2_para1">Found & Leader</p>
-                </div>
+                  <img src={image16} />
+                  <div className="swiper_box2">
+                    <p className="swiper_box2_para">Kenn Gallagher</p>
+                    <p className="swiper_box2_para1">Found & Leader</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -455,16 +416,66 @@ function Home() {
                   <p className="swiper_p3">{t("contentDescription")}</p>
                 </div>
                 <div className="swiper_box1">
-                <img src={image16} />
-                <div className="swiper_box2">
-                  <p className="swiper_box2_para">Kenn Gallagher</p>
-                  <p className="swiper_box2_para1">Found & Leader</p>
-                </div>
+                  <img src={image16} />
+                  <div className="swiper_box2">
+                    <p className="swiper_box2_para">Kenn Gallagher</p>
+                    <p className="swiper_box2_para1">Found & Leader</p>
+                  </div>
                 </div>
               </div>
             </div>
           </SwiperSlide>
-          
+          <SwiperSlide>
+            <div className="swipper_box1">
+              <div className="swiper_content">
+                <img src={image15} />
+                <div className="swiper_box">
+                  <p className="swiper_p3">{t("contentDescription")}</p>
+                </div>
+                <div className="swiper_box1">
+                  <img src={image16} />
+                  <div className="swiper_box2">
+                    <p className="swiper_box2_para">Kenn Gallagher</p>
+                    <p className="swiper_box2_para1">Found & Leader</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swipper_box1">
+              <div className="swiper_content">
+                <img src={image15} />
+                <div className="swiper_box">
+                  <p className="swiper_p3">{t("contentDescription")}</p>
+                </div>
+                <div className="swiper_box1">
+                  <img src={image16} />
+                  <div className="swiper_box2">
+                    <p className="swiper_box2_para">Kenn Gallagher</p>
+                    <p className="swiper_box2_para1">Found & Leader</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swipper_box1">
+              <div className="swiper_content">
+                <img src={image15} />
+                <div className="swiper_box">
+                  <p className="swiper_p3">{t("contentDescription")}</p>
+                </div>
+                <div className="swiper_box1">
+                  <img src={image16} />
+                  <div className="swiper_box2">
+                    <p className="swiper_box2_para">Kenn Gallagher</p>
+                    <p className="swiper_box2_para1">Found & Leader</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
       <Footer />

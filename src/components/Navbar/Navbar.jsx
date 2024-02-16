@@ -1,19 +1,21 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import image1 from "../../asset/image/Vector.png";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 function Navbar() {
   const navigate = useNavigate();
   const [activeButton, setActiveButton] = useState(null);
-
+  const location = useLocation();
+  const fromHome = new URLSearchParams(location.search).get("fromHome");
   const handleButtonClick = (button) => {
+    navigate("/contactus");
     setActiveButton(button);
   };
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-transparent" >
+      <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div className="container">
           <Link className="navbar-brand" to="#">
             <img src={image1} alt="Logo" />
@@ -29,7 +31,10 @@ function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse custom-collapse" id="navbarText">
+          <div
+            className="collapse navbar-collapse custom-collapse"
+            id="navbarText"
+          >
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
               <li className="nav-item">
                 <Link
@@ -59,8 +64,9 @@ function Navbar() {
               </li>
               <li className="nav-item">
                 <Link
+                  to="/service"
                   className={`nav-link ${
-                    activeButton === "Services" && "active"
+                    activeButton === "Services" ? "active" : ""
                   }`}
                   style={{
                     border:
@@ -68,7 +74,6 @@ function Navbar() {
                         ? "1px solid #1BACD1"
                         : "none",
                   }}
-                  to="/service"
                   onClick={() => handleButtonClick("Services")}
                 >
                   Services
