@@ -183,24 +183,20 @@ function Home() {
                   </div>
                   <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("contentStrategy")}</p>
+                      <p>{t("shortformstrategy")}</p>
                     </Link>
                   </div>
                   <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("contentStrategy")}</p>
+                      <p>{t("AIGeneratedFacelessContent")}</p>
                     </Link>
                   </div>
                   <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("contentStrategy")}</p>
+                      <p>{t("contentautomation")}</p>
                     </Link>
                   </div>
-                  <div className="overlay_content_A">
-                    <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("contentStrategy")}</p>
-                    </Link>
-                  </div>
+                 
                   <img src={image10} />
                 </div>
               </div>
@@ -211,29 +207,24 @@ function Home() {
               <img src={image9} />
               <div className="overlay">
                 <div className="overlay-content">
-                  <div className="overlay_content_A">
+                <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
                       <p>{t("contentStrategy")}</p>
                     </Link>
                   </div>
                   <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("contentStrategy")}</p>
+                      <p>{t("shortformstrategy")}</p>
                     </Link>
                   </div>
                   <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("contentStrategy")}</p>
+                      <p>{t("AIGeneratedFacelessContent")}</p>
                     </Link>
                   </div>
                   <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("contentStrategy")}</p>
-                    </Link>
-                  </div>
-                  <div className="overlay_content_A">
-                    <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("contentStrategy")}</p>
+                      <p>{t("contentautomation")}</p>
                     </Link>
                   </div>
                   <img src={image10} />
@@ -246,29 +237,24 @@ function Home() {
               <img src={image9} />
               <div className="overlay">
                 <div className="overlay-content">
-                  <div className="overlay_content_A">
+                <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
                       <p>{t("contentStrategy")}</p>
                     </Link>
                   </div>
                   <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("contentStrategy")}</p>
+                      <p>{t("shortformstrategy")}</p>
                     </Link>
                   </div>
                   <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("contentStrategy")}</p>
+                      <p>{t("AIGeneratedFacelessContent")}</p>
                     </Link>
                   </div>
                   <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("contentStrategy")}</p>
-                    </Link>
-                  </div>
-                  <div className="overlay_content_A">
-                    <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("contentStrategy")}</p>
+                      <p>{t("contentautomation")}</p>
                     </Link>
                   </div>
                   <img src={image10} />
