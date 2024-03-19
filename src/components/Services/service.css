@@ -1,5 +1,5 @@
 .service_main_box{
-    border: 1px solid #1BACD1;
+    /* border: 1px solid #1BACD1; */
     padding: 20px 50px;
     display: flex;
     flex-direction: column;
@@ -10,18 +10,42 @@
     margin-bottom: 20px;
 }
 .service_main_box > p{
-    text-align:left;
+    text-align:center;
     color: white;
 }
 .service_main_box >h5{
     color: white;
-    text-align:left;
+    text-transform: capitalize;
+    font-size: 29px;
+    text-align:center;
+}
+.service_content_box_1{
+  padding: 20px 10px;
+  margin: 7px;
+}
+.service_content_box_1 > h5{
+    text-align: left;
+    color: white;
+    text-transform: capitalize;
+}
+.service_content_box_1 >p{
+  color: white;
+  text-align: left;
 }
 .servicesection1_heading {
   color: #1BACD1;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 45px;
   font-weight: bold;
+}
+.service_content{
+  background-image: url('../../asset/image/Frame 41.png');
+  height: 92vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 .servicesection1_heading2 {
   color: white;

@@ -5,7 +5,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 // import "swiper/css/autoplay"; // Import autoplay CSS
 import "swiper/modules";
-import { Link } from "react-router-dom";
 import { Autoplay } from "swiper/modules";
 import { Navigation } from "swiper/modules";
 import image15 from "../../asset/image/a9.png";
@@ -25,8 +24,9 @@ import image13 from "../../asset/image/person.png";
 import image14 from "../../asset/image/a8.png";
 import Footer from "../footer/Footer";
 import Navbar from "../Navbar/Navbar";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import Button from "react-bootstrap/Button";
 function Home() {
   const navigate = useNavigate();
   const { t } = useTranslation();
@@ -114,7 +114,11 @@ function Home() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  const handleButtonClick = () => {
+    console.log("nottttt");
+    navigate("/aboutus");
+  };
+  console.log('navigate',navigate)
   return (
     <div>
       {/* <Navbar /> */}
@@ -140,357 +144,358 @@ function Home() {
           <p className="upersection1_content_SideA_P ">{t("ourStory")}</p>
         </div>
         <div className="row">
-          <div className="col-md">
-            <p className="upersection1_content_SideA_P2">
-              {t("ourStoryDescription")}
-            </p>
-          </div>
+          <p className="upersection1_content_SideA_P2">
+            {t("ourStoryDescription")}
+          </p>
+        </div>
+        <div className="row">
           <div className="col-md ourstory">
-            <p className="upersection1_content_SideB_P">
-              {t("contentDescription")}
-            </p>
-            <p className="upersection1_content_SideB_P">
-              {t("contentDescription")}
-            </p>
-            <button
+            <p className="upersection1_content_SideB_P">{t("first_content")}</p>
+            <Button
               type="button"
               className="btn btn-light upersection1_content_SideB_Button"
+              onClick={handleButtonClick}
             >
-              Light
-            </button>
+              Learn More About Us
+            </Button>
+          </div>
+          <div className="col-md">
+            <img src={image3} className="upersection1_img" />
           </div>
         </div>
-        <img src={image3} className="upersection1_img" />
+      </div>
+      <div className="yyy" style={{ marginTop: "10%" }}>
+        <div className="container uppersection3">
+          <div className="row" style={{ padding: "60px 0px" }}>
+            <h4 className="uppersection3_heading">Services</h4>
+          </div>
+          <div className="row" style={{ justifyContent: "center" }}>
+            <div className="col-lg uppersection3_box1">
+              <h5>{t("content")}</h5>
+              <p>{t("contentDescription")}</p>
+              <img src={image9} />
+              <div className="overlay">
+                <div className="overlay-content">
+                  <div className="overlay_content_A">
+                    <Link className="overlay_link" to="/service?fromHome=true">
+                      <p>{t("contentStrategy")}</p>
+                    </Link>
+                  </div>
+                  <div className="overlay_content_A">
+                    <Link className="overlay_link" to="/service?fromHome=true">
+                      <p>{t("contentStrategy")}</p>
+                    </Link>
+                  </div>
+                  <div className="overlay_content_A">
+                    <Link className="overlay_link" to="/service?fromHome=true">
+                      <p>{t("contentStrategy")}</p>
+                    </Link>
+                  </div>
+                  <div className="overlay_content_A">
+                    <Link className="overlay_link" to="/service?fromHome=true">
+                      <p>{t("contentStrategy")}</p>
+                    </Link>
+                  </div>
+                  <div className="overlay_content_A">
+                    <Link className="overlay_link" to="/service?fromHome=true">
+                      <p>{t("contentStrategy")}</p>
+                    </Link>
+                  </div>
+                  <img src={image10} />
+                </div>
+              </div>
+            </div>
+            <div className="col-lg uppersection3_box1">
+              <h5>{t("AI")}</h5>
+              <p>{t("contentDescription")}</p>
+              <img src={image9} />
+              <div className="overlay">
+                <div className="overlay-content">
+                  <div className="overlay_content_A">
+                    <Link className="overlay_link" to="/service?fromHome=true">
+                      <p>{t("contentStrategy")}</p>
+                    </Link>
+                  </div>
+                  <div className="overlay_content_A">
+                    <Link className="overlay_link" to="/service?fromHome=true">
+                      <p>{t("contentStrategy")}</p>
+                    </Link>
+                  </div>
+                  <div className="overlay_content_A">
+                    <Link className="overlay_link" to="/service?fromHome=true">
+                      <p>{t("contentStrategy")}</p>
+                    </Link>
+                  </div>
+                  <div className="overlay_content_A">
+                    <Link className="overlay_link" to="/service?fromHome=true">
+                      <p>{t("contentStrategy")}</p>
+                    </Link>
+                  </div>
+                  <div className="overlay_content_A">
+                    <Link className="overlay_link" to="/service?fromHome=true">
+                      <p>{t("contentStrategy")}</p>
+                    </Link>
+                  </div>
+                  <img src={image10} />
+                </div>
+              </div>
+            </div>
+            <div className="col-lg uppersection3_box1">
+              <h5>{t("Web3.0")}</h5>
+              <p>{t("contentDescription")}</p>
+              <img src={image9} />
+              <div className="overlay">
+                <div className="overlay-content">
+                  <div className="overlay_content_A">
+                    <Link className="overlay_link" to="/service?fromHome=true">
+                      <p>{t("contentStrategy")}</p>
+                    </Link>
+                  </div>
+                  <div className="overlay_content_A">
+                    <Link className="overlay_link" to="/service?fromHome=true">
+                      <p>{t("contentStrategy")}</p>
+                    </Link>
+                  </div>
+                  <div className="overlay_content_A">
+                    <Link className="overlay_link" to="/service?fromHome=true">
+                      <p>{t("contentStrategy")}</p>
+                    </Link>
+                  </div>
+                  <div className="overlay_content_A">
+                    <Link className="overlay_link" to="/service?fromHome=true">
+                      <p>{t("contentStrategy")}</p>
+                    </Link>
+                  </div>
+                  <div className="overlay_content_A">
+                    <Link className="overlay_link" to="/service?fromHome=true">
+                      <p>{t("contentStrategy")}</p>
+                    </Link>
+                  </div>
+                  <img src={image10} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="upersection2_img">
         <img src={image14} className="uppersection2_content" />
       </div>
-      <div className="container uppersection3">
-        <div className="row" style={{ padding: "30px 0px" }}>
-          <h4 className="uppersection3_heading">Services</h4>
-        </div>
-        <div className="row" style={{ justifyContent: "center" }}>
-          <div className="col-lg uppersection3_box1">
-            <h5>{t("content")}</h5>
-            <p>{t("contentDescription")}</p>
-            <img src={image9} />
-            <div className="overlay">
-              <div className="overlay-content">
-                <div className="overlay_content_A">
-                  <Link className="overlay_link" to="/service?fromHome=true">
-                    <p>{t("contentStrategy")}</p>
-                  </Link>
-                </div>
-                <div className="overlay_content_A">
-                  <Link className="overlay_link" to="/service?fromHome=true">
-                    <p>{t("contentStrategy")}</p>
-                  </Link>
-                </div>
-                <div className="overlay_content_A">
-                  <Link className="overlay_link" to="/service?fromHome=true">
-                    <p>{t("contentStrategy")}</p>
-                  </Link>
-                </div>
-                <div className="overlay_content_A">
-                  <Link className="overlay_link" to="/service?fromHome=true">
-                    <p>{t("contentStrategy")}</p>
-                  </Link>
-                </div>
-                <div className="overlay_content_A">
-                  <Link className="overlay_link" to="/service?fromHome=true">
-                    <p>{t("contentStrategy")}</p>
-                  </Link>
-                </div>
-                <img src={image10} />
-              </div>
-            </div>
+      <div className="blog_container">
+        <div className="container">
+          <div className="row" style={{ padding: "30px 0px" }}>
+            <h4 className="blog_heading">{t("blogs")}</h4>
           </div>
-          <div className="col-lg uppersection3_box1">
-            <h5>{t("AI")}</h5>
-            <p>{t("contentDescription")}</p>
-            <img src={image9} />
-            <div className="overlay">
-              <div className="overlay-content">
-                <div className="overlay_content_A">
-                  <Link className="overlay_link" to="/service?fromHome=true">
-                    <p>{t("contentStrategy")}</p>
-                  </Link>
-                </div>
-                <div className="overlay_content_A">
-                  <Link className="overlay_link" to="/service?fromHome=true">
-                    <p>{t("contentStrategy")}</p>
-                  </Link>
-                </div>
-                <div className="overlay_content_A">
-                  <Link className="overlay_link" to="/service?fromHome=true">
-                    <p>{t("contentStrategy")}</p>
-                  </Link>
-                </div>
-                <div className="overlay_content_A">
-                  <Link className="overlay_link" to="/service?fromHome=true">
-                    <p>{t("contentStrategy")}</p>
-                  </Link>
-                </div>
-                <div className="overlay_content_A">
-                  <Link className="overlay_link" to="/service?fromHome=true">
-                    <p>{t("contentStrategy")}</p>
-                  </Link>
-                </div>
-                <img src={image10} />
-              </div>
-            </div>
-          </div>
-          <div className="col-lg uppersection3_box1">
-            <h5>{t("Web3.0")}</h5>
-            <p>{t("contentDescription")}</p>
-            <img src={image9} />
-            <div className="overlay">
-              <div className="overlay-content">
-                <div className="overlay_content_A">
-                  <Link className="overlay_link" to="/service?fromHome=true">
-                    <p>{t("contentStrategy")}</p>
-                  </Link>
-                </div>
-                <div className="overlay_content_A">
-                  <Link className="overlay_link" to="/service?fromHome=true">
-                    <p>{t("contentStrategy")}</p>
-                  </Link>
-                </div>
-                <div className="overlay_content_A">
-                  <Link className="overlay_link" to="/service?fromHome=true">
-                    <p>{t("contentStrategy")}</p>
-                  </Link>
-                </div>
-                <div className="overlay_content_A">
-                  <Link className="overlay_link" to="/service?fromHome=true">
-                    <p>{t("contentStrategy")}</p>
-                  </Link>
-                </div>
-                <div className="overlay_content_A">
-                  <Link className="overlay_link" to="/service?fromHome=true">
-                    <p>{t("contentStrategy")}</p>
-                  </Link>
-                </div>
-                <img src={image10} />
-              </div>
-            </div>
+          <div className="row" style={{ justifyContent: "center" }}>
+            <Swiper
+              slidesPerView={slidesPerVieww}
+              modules={[Autoplay]}
+              autoplay={{ delay: 5000 }}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <Link to="/blog?fromHomee=true" className="op">
+                  {" "}
+                  <div className="col-lg uppersection4_box1">
+                    <img src={image11} />
+                    <p>{t("ethicalConsiderations")}</p>
+                  </div>
+                </Link>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Link to="/blog?fromHomee=true" className="op">
+                  {" "}
+                  <div className="col-lg uppersection4_box1">
+                    <img src={image11} />
+                    <p>{t("ethicalConsiderations")}</p>
+                  </div>
+                </Link>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Link to="/blog?fromHomee=true" className="op">
+                  {" "}
+                  <div className="col-lg uppersection4_box1">
+                    <img src={image11} />
+                    <p>{t("ethicalConsiderations")}</p>
+                  </div>
+                </Link>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Link to="/blog?fromHomee=true" className="op">
+                  {" "}
+                  <div className="col-lg uppersection4_box1">
+                    <img src={image11} />
+                    <p>{t("ethicalConsiderations")}</p>
+                  </div>
+                </Link>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Link to="/blog?fromHomee=true" className="op">
+                  {" "}
+                  <div className="col-lg uppersection4_box1">
+                    <img src={image11} />
+                    <p>{t("ethicalConsiderations")}</p>
+                  </div>
+                </Link>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>
-      <div className="container">
-        <div className="row" style={{ padding: "30px 0px" }}>
-          <h4 className="uppersection3_heading">{t("blogs")}</h4>
-        </div>
-        <div className="row" style={{ justifyContent: "center" }}>
+      <div className="yyy">
+        <div className="uppersection5">
+          <div className="heading_content">
+            <h3>{t("testimonials")}</h3>
+            <p>
+              {t("showAll")}
+              <img src={image12} />
+            </p>
+          </div>
           <Swiper
-            slidesPerView={slidesPerVieww}
-            modules={[Autoplay]}
+            slidesPerView={slidesPerView}
+            navigation={true}
+            modules={[Navigation, Autoplay]}
             autoplay={{ delay: 5000 }}
             className="mySwiper"
           >
             <SwiperSlide>
-              <Link
-                to={{ pathname: "/blog", state: { scrollToTop: true } }}
-                // to='blog'
-              >
-                {" "}
-                <div className="col-lg uppersection4_box1">
-                  <img src={image11} />
-                  <p>{t("ethicalConsiderations")}</p>
+              <div className="swipper_box1">
+                <div className="swiper_content">
+                  <img src={image15} />
+                  <div className="swiper_box">
+                    <p className="swiper_p3">{t("contentDescription")}</p>
+                  </div>
+                  <div className="swiper_box1">
+                    <img src={image16} />
+                    <div className="swiper_box2">
+                      <p className="swiper_box2_para">Kenn Gallagher</p>
+                      <p className="swiper_box2_para1">Found & Leader</p>
+                    </div>
+                  </div>
                 </div>
-              </Link>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <Link to={{ pathname: "/blog", state: { scrollToTop: true } }}>
-                {" "}
-                <div className="col-lg uppersection4_box1">
-                  <img src={image11} />
-                  <p>{t("ethicalConsiderations")}</p>
+              <div className="swipper_box1">
+                <div className="swiper_content">
+                  <img src={image15} />
+                  <div className="swiper_box">
+                    <p className="swiper_p3">{t("contentDescription")}</p>
+                  </div>
+                  <div className="swiper_box1">
+                    <img src={image16} />
+                    <div className="swiper_box2">
+                      <p className="swiper_box2_para">Kenn Gallagher</p>
+                      <p className="swiper_box2_para1">Found & Leader</p>
+                    </div>
+                  </div>
                 </div>
-              </Link>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <Link to={{ pathname: "/blog", state: { scrollToTop: true } }}>
-                {" "}
-                <div className="col-lg uppersection4_box1">
-                  <img src={image11} />
-                  <p>{t("ethicalConsiderations")}</p>
+              <div className="swipper_box1">
+                <div className="swiper_content">
+                  <img src={image15} />
+                  <div className="swiper_box">
+                    <p className="swiper_p3">{t("contentDescription")}</p>
+                  </div>
+                  <div className="swiper_box1">
+                    <img src={image16} />
+                    <div className="swiper_box2">
+                      <p className="swiper_box2_para">Kenn Gallagher</p>
+                      <p className="swiper_box2_para1">Found & Leader</p>
+                    </div>
+                  </div>
                 </div>
-              </Link>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <Link to={{ pathname: "/blog", state: { scrollToTop: true } }}>
-                {" "}
-                <div className="col-lg uppersection4_box1">
-                  <img src={image11} />
-                  <p>{t("ethicalConsiderations")}</p>
+              <div className="swipper_box1">
+                <div className="swiper_content">
+                  <img src={image15} />
+                  <div className="swiper_box">
+                    <p className="swiper_p3">{t("contentDescription")}</p>
+                  </div>
+                  <div className="swiper_box1">
+                    <img src={image16} />
+                    <div className="swiper_box2">
+                      <p className="swiper_box2_para">Kenn Gallagher</p>
+                      <p className="swiper_box2_para1">Found & Leader</p>
+                    </div>
+                  </div>
                 </div>
-              </Link>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <Link to={{ pathname: "/blog", state: { scrollToTop: true } }}>
-                {" "}
-                <div className="col-lg uppersection4_box1">
-                  <img src={image11} />
-                  <p>{t("ethicalConsiderations")}</p>
+              <div className="swipper_box1">
+                <div className="swiper_content">
+                  <img src={image15} />
+                  <div className="swiper_box">
+                    <p className="swiper_p3">{t("contentDescription")}</p>
+                  </div>
+                  <div className="swiper_box1">
+                    <img src={image16} />
+                    <div className="swiper_box2">
+                      <p className="swiper_box2_para">Kenn Gallagher</p>
+                      <p className="swiper_box2_para1">Found & Leader</p>
+                    </div>
+                  </div>
                 </div>
-              </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="swipper_box1">
+                <div className="swiper_content">
+                  <img src={image15} />
+                  <div className="swiper_box">
+                    <p className="swiper_p3">{t("contentDescription")}</p>
+                  </div>
+                  <div className="swiper_box1">
+                    <img src={image16} />
+                    <div className="swiper_box2">
+                      <p className="swiper_box2_para">Kenn Gallagher</p>
+                      <p className="swiper_box2_para1">Found & Leader</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="swipper_box1">
+                <div className="swiper_content">
+                  <img src={image15} />
+                  <div className="swiper_box">
+                    <p className="swiper_p3">{t("contentDescription")}</p>
+                  </div>
+                  <div className="swiper_box1">
+                    <img src={image16} />
+                    <div className="swiper_box2">
+                      <p className="swiper_box2_para">Kenn Gallagher</p>
+                      <p className="swiper_box2_para1">Found & Leader</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="swipper_box1">
+                <div className="swiper_content">
+                  <img src={image15} />
+                  <div className="swiper_box">
+                    <p className="swiper_p3">{t("contentDescription")}</p>
+                  </div>
+                  <div className="swiper_box1">
+                    <img src={image16} />
+                    <div className="swiper_box2">
+                      <p className="swiper_box2_para">Kenn Gallagher</p>
+                      <p className="swiper_box2_para1">Found & Leader</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </SwiperSlide>
           </Swiper>
         </div>
-      </div>
-      <div className="uppersection5">
-        <div className="heading_content">
-          <h3>{t("testimonials")}</h3>
-          <p>
-            {t("showAll")}
-            <img src={image12} />
-          </p>
-        </div>
-        <Swiper
-          slidesPerView={slidesPerView}
-          navigation={true}
-          modules={[Navigation, Autoplay]}
-          autoplay={{ delay: 5000 }}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <div className="swipper_box1">
-              <div className="swiper_content">
-                <img src={image15} />
-                <div className="swiper_box">
-                  <p className="swiper_p3">{t("contentDescription")}</p>
-                </div>
-                <div className="swiper_box1">
-                  <img src={image16} />
-                  <div className="swiper_box2">
-                    <p className="swiper_box2_para">Kenn Gallagher</p>
-                    <p className="swiper_box2_para1">Found & Leader</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="swipper_box1">
-              <div className="swiper_content">
-                <img src={image15} />
-                <div className="swiper_box">
-                  <p className="swiper_p3">{t("contentDescription")}</p>
-                </div>
-                <div className="swiper_box1">
-                  <img src={image16} />
-                  <div className="swiper_box2">
-                    <p className="swiper_box2_para">Kenn Gallagher</p>
-                    <p className="swiper_box2_para1">Found & Leader</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="swipper_box1">
-              <div className="swiper_content">
-                <img src={image15} />
-                <div className="swiper_box">
-                  <p className="swiper_p3">{t("contentDescription")}</p>
-                </div>
-                <div className="swiper_box1">
-                  <img src={image16} />
-                  <div className="swiper_box2">
-                    <p className="swiper_box2_para">Kenn Gallagher</p>
-                    <p className="swiper_box2_para1">Found & Leader</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="swipper_box1">
-              <div className="swiper_content">
-                <img src={image15} />
-                <div className="swiper_box">
-                  <p className="swiper_p3">{t("contentDescription")}</p>
-                </div>
-                <div className="swiper_box1">
-                  <img src={image16} />
-                  <div className="swiper_box2">
-                    <p className="swiper_box2_para">Kenn Gallagher</p>
-                    <p className="swiper_box2_para1">Found & Leader</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="swipper_box1">
-              <div className="swiper_content">
-                <img src={image15} />
-                <div className="swiper_box">
-                  <p className="swiper_p3">{t("contentDescription")}</p>
-                </div>
-                <div className="swiper_box1">
-                  <img src={image16} />
-                  <div className="swiper_box2">
-                    <p className="swiper_box2_para">Kenn Gallagher</p>
-                    <p className="swiper_box2_para1">Found & Leader</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="swipper_box1">
-              <div className="swiper_content">
-                <img src={image15} />
-                <div className="swiper_box">
-                  <p className="swiper_p3">{t("contentDescription")}</p>
-                </div>
-                <div className="swiper_box1">
-                  <img src={image16} />
-                  <div className="swiper_box2">
-                    <p className="swiper_box2_para">Kenn Gallagher</p>
-                    <p className="swiper_box2_para1">Found & Leader</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="swipper_box1">
-              <div className="swiper_content">
-                <img src={image15} />
-                <div className="swiper_box">
-                  <p className="swiper_p3">{t("contentDescription")}</p>
-                </div>
-                <div className="swiper_box1">
-                  <img src={image16} />
-                  <div className="swiper_box2">
-                    <p className="swiper_box2_para">Kenn Gallagher</p>
-                    <p className="swiper_box2_para1">Found & Leader</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="swipper_box1">
-              <div className="swiper_content">
-                <img src={image15} />
-                <div className="swiper_box">
-                  <p className="swiper_p3">{t("contentDescription")}</p>
-                </div>
-                <div className="swiper_box1">
-                  <img src={image16} />
-                  <div className="swiper_box2">
-                    <p className="swiper_box2_para">Kenn Gallagher</p>
-                    <p className="swiper_box2_para1">Found & Leader</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
       </div>
       <Footer />
     </div>

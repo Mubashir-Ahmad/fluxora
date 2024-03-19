@@ -38,6 +38,13 @@
     width: 45px;
     height: 45px;
 }
+.blog_uppersection4_box1 > p {
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .blog-detail-insidebox_1{
     color: #1BACD1;
     text-align: center;

@@ -96,9 +96,9 @@ body {
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 .upersection1_img{
-  margin-top: 30px;
+  /* margin-top: 30px; */
   object-fit: contain;
-  width: 70%;
+  width: 80%;
 }
 .upersection1_content{
   display: flex;
@@ -125,7 +125,7 @@ body {
 
 .upersection1_content_SideA_P2{
   color: white;
-  text-align: left;
+  text-align: center;
   /* font-family: 'Times New Roman', Times, serif; */
   font-family: 'Revive 80 Wide';
   font-size: 35px;
@@ -136,11 +136,14 @@ body {
   color: white;
 }
 .upersection1_content_SideB_Button{
-      background: #334d50;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to right, #cbcaa5, #334d50);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to right, #cbcaa5, #334d50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      color: white;
-      width: 140px;
+      /* background: #334d50;  
+      background: -webkit-linear-gradient(to right, #cbcaa5, #334d50); 
+      background: linear-gradient(to right, #cbcaa5, #334d50);  */
+      background-color: white;
+      color: black;
+      width: 180px;
+      margin-top: 5%;
+      z-index: 999;
 }
 /* Upersection 2 */
 .upersection2_img {
@@ -164,14 +167,27 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.op{
+  text-decoration: none;
+}
 /* Uppersection-3 */
-.uppersection3{
-margin-top: -50px;
+.yyy{
+  background: rgb(19,101,141);
+background: linear-gradient(180deg, rgba(19,101,141,1) 0%, rgba(0,0,0,1) 72%);
+}
+.blog_container{
+  background-color: white;
+  height: 100vh;
 }
 .uppersection3_heading {
   font-family: 'Times New Roman', Times, serif;
   color: white;
+  font-size: 45px;
+  font-weight: 600;
+}
+.blog_heading{
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
   font-size: 45px;
   font-weight: 600;
 }
@@ -302,7 +318,7 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 3%, rgba(19,101,141,1) 100%);
   align-items: center;
   position: relative; /* Add this line */
   overflow: hidden; /* Add this line */
-  border: 1px solid white;
+  border: 1px solid #36D1DC;
   background-color: rgba(27, 172, 209, 0.1); /* Adjust the alpha value for opacity */
 }
 .uppersection4_box1 >img{
@@ -311,8 +327,9 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 3%, rgba(19,101,141,1) 100%);
   object-fit: cover;
 }
 .uppersection4_box1 > p{
-  color: white;
-  font-size: 20px;
+  color: black;
+  font-size: 22px;
+  font-weight: 500;
   margin-top: 15px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -320,7 +337,7 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 3%, rgba(19,101,141,1) 100%);
   /* position: absolute; */
   /* background-color: #1BACD1; */
   padding: 20px 40px;
-  margin-top: 10%;
+  /* margin-top: 10%; */
 }
 .heading_content{
   padding: 50px;
@@ -350,11 +367,13 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 3%, rgba(19,101,141,1) 100%);
   /* background: #2193b0;  
 background: -webkit-linear-gradient(to left, #6dd5ed, #2193b0);  
 background: linear-gradient(to left, #6dd5ed, #2193b0); */
-background: #56CCF2;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+/* background: #56CCF2;  
+background: -webkit-linear-gradient(to left, #2F80ED, #56CCF2);  
+background: linear-gradient(to left, #2F80ED, #56CCF2);  */
+/* background: rgb(6,86,106);
+background: linear-gradient(142deg, rgba(6,86,106,1) 18%, rgba(255,255,255,1) 120%); */
+background: rgb(27,172,209);
+background: linear-gradient(180deg, rgba(27,172,209,1) 0%, rgba(2,102,128,1) 55%);
 }
 
 .swiper_content{
@@ -388,6 +407,7 @@ background: linear-gradient(to left, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Fi
   padding: 20px 0px;
 }
 .swiper_p3{
+  color: white;
   text-align: start;
   font-family: 'Times New Roman', Times, serif;
 }

@@ -34,7 +34,7 @@ function Blog() {
             <div className="service_swipper_box1">
               <Link to="/blogdetail" className="blogdetail_link">
                 <div className="service_swiper_content">
-                  <div className="col-lg uppersection4_box1">
+                  <div className="col-lg blog_uppersection4_box1">
                     <img src={image11} />
                     <p>{t("ethicalConsiderations")}</p>
                   </div>
@@ -44,7 +44,7 @@ function Blog() {
             <div className="service_swipper_box1">
               <Link to="/blogdetail" className="blogdetail_link">
                 <div className="service_swiper_content">
-                  <div className="col-lg uppersection4_box1">
+                  <div className="col-lg blog_uppersection4_box1">
                     <img src={image11} />
                     <p>{t("ethicalConsiderations")}</p>
                   </div>
@@ -54,7 +54,7 @@ function Blog() {
             <div className="service_swipper_box1">
               <Link to="/blogdetail" className="blogdetail_link">
                 <div className="service_swiper_content">
-                  <div className="col-lg uppersection4_box1">
+                  <div className="col-lg blog_uppersection4_box1">
                     <img src={image11} />
                     <p>{t("ethicalConsiderations")}</p>
                   </div>
@@ -64,7 +64,7 @@ function Blog() {
             <div className="service_swipper_box1">
               <Link to="/blogdetail" className="blogdetail_link">
                 <div className="service_swiper_content">
-                  <div className="col-lg uppersection4_box1">
+                  <div className="col-lg blog_uppersection4_box1">
                     <img src={image11} />
                     <p>{t("ethicalConsiderations")}</p>
                   </div>
@@ -74,7 +74,7 @@ function Blog() {
             <div className="service_swipper_box1">
               <Link to="/blogdetail" className="blogdetail_link">
                 <div className="service_swiper_content">
-                  <div className="col-lg uppersection4_box1">
+                  <div className="col-lg blog_uppersection4_box1">
                     <img src={image11} />
                     <p>{t("ethicalConsiderations")}</p>
                   </div>
@@ -84,7 +84,7 @@ function Blog() {
             <div className="service_swipper_box1">
               <Link to="/blogdetail" className="blogdetail_link">
                 <div className="service_swiper_content">
-                  <div className="col-lg uppersection4_box1">
+                  <div className="col-lg blog_uppersection4_box1">
                     <img src={image11} />
                     <p>{t("ethicalConsiderations")}</p>
                   </div>

@@ -12,6 +12,29 @@
 .slide-iin{
   opacity: 1;
 }
+.about_container{
+  background-image: url('../../asset/image/Frame 41.png');
+  height: 92vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.ElunaAI{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ElunaAI > h4{
+  padding: 25px 0px ;
+      color: white;
+}
+.ElunaAI >p{
+  color: white;
+  text-align: left;
+}
 
 @keyframes slideInFromBottom {
     0% {
@@ -23,7 +46,7 @@
   }
   
   .slide-iin {
-    animation: slideInFromBottom 0.5s ease-in-out;
+    animation: slideInFromBottom 0.2ms ease-in-out;
   }
   .slide-inn {
     animation: slideInFromBottom 2.5s ease-in-out;
@@ -128,6 +151,10 @@
     color: white;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+  }
+  .aboutsection3{
+    background: rgb(19,101,141);
+    background: linear-gradient(180deg, rgba(19,101,141,1) 0%, rgba(0,0,0,1) 72%);
   }
 .aboutsection3_box_A{
     display: flex;

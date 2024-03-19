@@ -5,11 +5,12 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 function Navbar() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [activeButton, setActiveButton] = useState(null);
   const location = useLocation();
   const fromHome = new URLSearchParams(location.search).get("fromHome");
+  const fromHomee = new URLSearchParams(location.search).get("fromHomee");
   const handleButtonClick = (button) => {
     navigate("/contactus");
     setActiveButton(button);
@@ -52,18 +53,18 @@ function Navbar() {
                 </Link> */}
                 <Link
                   className={`nav-link ${
-                    activeButton === "AI" && !fromHome && "active"
+                    activeButton === "AI" && !fromHome && "active" && !fromHomee
                   }`}
                   style={{
                     border:
-                      activeButton === "AI" && !fromHome
+                      activeButton === "AI" && !fromHome && !fromHomee
                         ? "1px solid #1BACD1"
                         : "none",
                   }}
                   to="/"
                   onClick={() => handleButtonClick("AI")}
                 >
-                {t("AI")}
+                  {t("AI")}
                 </Link>
               </li>
               <li className="nav-item">
@@ -76,7 +77,7 @@ function Navbar() {
                   to="/aboutus"
                   onClick={() => handleButtonClick("About")}
                 >
-                    {t("aboutus")}
+                  {t("aboutus")}
                 </Link>
               </li>
               <li className="nav-item">
@@ -95,20 +96,25 @@ function Navbar() {
                   }}
                   onClick={() => handleButtonClick("Services")}
                 >
-                   {t("services")}
+                  {t("services")}
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
-                  className={`nav-link ${activeButton === "Blogs" && "active"}`}
+                  className={`nav-link ${
+                    fromHomee === "true" ||
+                    (activeButton === "Blogs" && "active")
+                  }`}
                   style={{
                     border:
-                      activeButton === "Blogs" ? "1px solid #1BACD1" : "none",
+                      fromHomee === "true" || activeButton === "Blogs"
+                        ? "1px solid #1BACD1"
+                        : "none",
                   }}
                   to="/blog"
                   onClick={() => handleButtonClick("Blogs")}
                 >
-                    {t("blogs")}
+                  {t("blogs")}
                 </Link>
               </li>
               <li className="nav-item">
@@ -119,7 +125,7 @@ function Navbar() {
                   }`}
                   onClick={() => handleButtonClick("Light")}
                 >
-                 {t("contact_us")}
+                  {t("contact_us")}
                 </button>
               </li>
             </ul>
