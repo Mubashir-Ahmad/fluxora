@@ -9,6 +9,7 @@ import Service from './components/Services/Service';
 import Blog from './components/Blogs/Blog';
 import BlogDetail from './components/Blogs/BlogDetail';
 import Contactus from './components/Contactus/Contactus';
+import Policy from './components/Policy/Policy';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/blog" element={<Blog/>} />
             <Route path="/blogdetail" element={<BlogDetail/>} />
             <Route path="/contactus" element={<Contactus/>} />
+            <Route path="/policy" element={<Policy/>} />
        </Routes>
       </Router>
     </div>

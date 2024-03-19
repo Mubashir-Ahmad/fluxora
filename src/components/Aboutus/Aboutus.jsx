@@ -10,6 +10,7 @@ import image4 from "../../asset/image/imagee7.png";
 import { useTranslation } from "react-i18next";
 function Aboutus() {
   const { t } = useTranslation();
+  const [counterValue, setCounterValue] = useState(0);
   const [isBottomAnimationVisible, setIsBottomAnimationVisible] =
     useState(false);
   const bottomRef = useRef(null);
@@ -38,6 +39,28 @@ function Aboutus() {
       }
     };
   }, []);
+  const updateCounter = () => {
+    const targetValue = 171637; // Target value to reach
+    const increment = 10000; // Increment value for each step
+    let currentValue = 0;
+
+    const interval = setInterval(() => {
+      currentValue += increment;
+      if (currentValue >= targetValue) {
+        // If the current value exceeds or equals the target value, stop the interval
+        clearInterval(interval);
+        setCounterValue(targetValue);
+      } else {
+        setCounterValue(currentValue);
+      }
+    }, 100); // Adjust the interval duration as needed
+  };
+
+  useEffect(() => {
+    // Call the function to start the counter when the component mounts
+    updateCounter();
+  }, []);
+
   return (
     <div>
       <div className="aboutsection1 slide-inn">
@@ -53,7 +76,7 @@ function Aboutus() {
           {t("contentDescription")}
         </p>
         <div className="container element-to-animate slide-in">
-          <h3 className="heading_content_3">$16,163,720</h3>
+        <h3 className="heading_content_3">${counterValue.toLocaleString()}</h3>
           <p className="heading_content_4">
             Value generated for clients within 1 year of bussiness
           </p>

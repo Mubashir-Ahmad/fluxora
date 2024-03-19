@@ -68,22 +68,17 @@ function Footer() {
             <h5 className="section-tittle">Pages</h5>
             <ul className="ulfooter">
               <li>
-                <NavLink to="/" className="navlink">
+                <NavLink to="/policy" className="navlink">
                   Privacy Policy
                 </NavLink>
               </li>
-              <li>
+              <li style={{marginBottom:'30px'}}>
                 <NavLink to="/" className="navlink">
                   {" "}
                   Terms & Conditions
                 </NavLink>
               </li>
-              <li>
-                <NavLink to="/" className="navlink">
-                  {" "}
-                  Blogs
-                </NavLink>
-              </li>
+              
             </ul>
           </div>
           <div className="sevice-content">

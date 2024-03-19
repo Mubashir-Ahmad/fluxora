@@ -267,6 +267,7 @@ function Home() {
       <div className="upersection2_img">
         <img src={image14} className="uppersection2_content" />
       </div>
+      <div className="yyy">
       <div className="blog_container">
         <div className="container">
           <div className="row" style={{ padding: "30px 0px" }}>
@@ -328,7 +329,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="yyy">
+     
         <div className="uppersection5">
           <div className="heading_content">
             <h3>{t("testimonials")}</h3>
