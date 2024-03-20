@@ -264,8 +264,19 @@ function Home() {
           </div>
         </div>
       </div>
+      <div className="container-fluid">
+        <div className="row">
       <div className="upersection2_img">
-        <img src={image14} className="uppersection2_content" />
+        {/* <img src={image14} className="uppersection2_content" /> */}
+          <div className="col-md home_img">
+          <img src={image4} alt="*"/>
+          </div>
+          <div className="col-md home_img"><img src={image5} alt="*"/></div>
+          <div className="col-md home_img"><img src={image6} alt="*"/></div>
+          <div className="col-md home_img"><img src={image7} alt="*"/></div>
+          <div className="col-md home_img"><img src={image8} alt="*"/></div>
+        </div>
+      </div>
       </div>
       <div className="yyy">
       <div className="blog_container">

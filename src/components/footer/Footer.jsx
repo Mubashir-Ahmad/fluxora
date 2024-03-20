@@ -1,8 +1,8 @@
 import React from "react";
 import "./footer.css";
-import { NavLink } from "react-router-dom";
+import { NavLink,useNavigate } from "react-router-dom";
 import image1 from "../../asset/image/Vector.png";
-import image01 from "../../asset/image/Facebook.png";
+import image01 from "../../asset/image/instagram.png";
 import image02 from "../../asset/image/twitter.png";
 import image04 from "../../asset/image/Google.png";
 import image03 from "../../asset/image/linkedin.png";
@@ -11,7 +11,9 @@ import classNames from "classnames";
 import i18next from "i18next";
 import cookies from "js-cookie";
 import "flag-icon-css/css/flag-icons.min.css";
+import { Button } from "react-bootstrap";
 function Footer() {
+  const navigate = useNavigate()
   const { t } = useTranslation();
   const languages = [
     {
@@ -89,10 +91,29 @@ function Footer() {
               <li>213 Lane , London</li>
             </ul>
           </div>
-          <div className="sevice-content d-flex justify-content-center align-items-center">
+          {/* d-flex */}
+          <div className="sevice-content  justify-content-center align-items-center">
             {/* <div className="section-tittle"> */}
             {/* <img sr */}
-            <div className="language-select">
+            <Button variant="light" style={{margin:'20px 0px'}} onClick={()=>navigate('/contactus')}>
+              <h5>Contact us</h5>
+              </Button>
+            <div className="icons">
+              <img src={image01} style={{
+                    background: 'white',
+                    width: '10%',
+                    color: 'white',
+                    borderRadius:'10px'
+              }}/>
+              <img src={image02} style={{
+                    background: 'white',
+                    width: '10%',
+                    color: 'white',
+                    borderRadius:'10px'
+              }}/>
+              <img src={image03} />
+            </div>
+            <div className="language-select" style={{margin:'10px 0px'}}>
               <div className="d-flex justify-content-end align-items-center language-select-root">
                 <div className="dropdown">
                   <button
@@ -139,12 +160,7 @@ function Footer() {
                 </div>
               </div>
             </div>
-            <div className="icons">
-              <img src={image01} />
-              <img src={image02} />
-              <img src={image03} />
-              <img src={image04} />
-            </div>
+         
             {/* <p className="icon_text">English version</p> */}
           </div>
         </div>

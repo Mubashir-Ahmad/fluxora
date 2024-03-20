@@ -130,10 +130,11 @@ body {
   width: 30%;
 }
 .upersection1_content_SideA_P{
-  color: white;
+  /* color: white; */
+  color: #1BACD1;
   text-align: center;
-  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  font-family: 'Revive 80 Wide';
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* font-family: 'Revive 80 Wide'; */
   font-size: 55px;
   font-weight: 600;
   z-index: 999;
@@ -172,8 +173,8 @@ body {
   background-image: url('../../asset/image/Frame 41.png');
   background-repeat: no-repeat;
   background-size: cover;
-  /* border: 1px solid red; */
-  
+  display: flex;
+  align-items: center;
 }
 .uppersection2_content{
   display: flex;
@@ -184,6 +185,12 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.home_img{
+  transition: all 0.5s ease-in-out;
+}
+.home_img:hover{
+  transform: scale(1.5);
 }
 .op{
   text-decoration: none;
