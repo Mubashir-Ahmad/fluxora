@@ -40,8 +40,8 @@ function Aboutus() {
     };
   }, []);
   const updateCounter = () => {
-    const targetValue = 171637; // Target value to reach
-    const increment = 10000; // Increment value for each step
+    const targetValue = 1616372; // Target value to reach
+    const increment = 100000000; // Increment value for each step
     let currentValue = 0;
 
     const interval = setInterval(() => {

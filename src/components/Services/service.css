@@ -1,12 +1,12 @@
 .service_main_box{
     /* border: 1px solid #1BACD1; */
-    padding: 20px 50px;
+    padding: 0px 50px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
     width: 90%;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 20px;
 }
 .service_main_box > p{
@@ -20,7 +20,7 @@
     text-align:center;
 }
 .service_content_box_1{
-  padding: 20px 10px;
+  padding: 0px 10px;
   margin: 7px;
 }
 .service_content_box_1 > h5{

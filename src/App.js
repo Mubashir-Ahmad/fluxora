@@ -10,6 +10,7 @@ import Blog from './components/Blogs/Blog';
 import BlogDetail from './components/Blogs/BlogDetail';
 import Contactus from './components/Contactus/Contactus';
 import Policy from './components/Policy/Policy';
+import Ai from './components/Ai/Ai';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             {/* <Route path="/" element={<Home/>} /> */}
             <Route path="/" element={<Home/>} />
             <Route path="/aboutus" element={<Aboutus/>} />
+            <Route path="/ai" element={<Ai/>} />
             <Route path="/service" element={<Service/>} />
             <Route path="/blog" element={<Blog/>} />
             <Route path="/blogdetail" element={<BlogDetail/>} />

@@ -140,8 +140,12 @@ function Home() {
           isBottomAnimationVisible ? "slide-iin" : ""
         }`}
       >
-        <div className="row">
-          <p className="upersection1_content_SideA_P ">{t("ourStory")}</p>
+        <div className="row" style={{display:'flex',justifyContent:'center'}}>
+        <h3 className="aboutsection1_heading" style={{width:'0%'}}>{t("aboutus")}</h3> " "
+        <h3 className="aboutsection1_heading2" style={{width:'20%'}}>{t("us")}</h3>
+          {/* <p className="upersection1_content_SideA_P ">{t("our")} {t("story")} */}
+          {/* </p> */}
+         
         </div>
         <div className="row">
           <p className="upersection1_content_SideA_P2">
@@ -295,7 +299,7 @@ function Home() {
                 <Link to="/blog?fromHomee=true" className="op">
                   {" "}
                   <div className="col-lg uppersection4_box1">
-                    <img src={image11} />
+                    <img src={image11} style={{zIndex:'999'}} />
                     <p>{t("ethicalConsiderations")}</p>
                   </div>
                 </Link>
@@ -343,8 +347,8 @@ function Home() {
      
         <div className="uppersection5">
           <div className="heading_content">
-            <h3>{t("testimonials")}</h3>
-            <p>
+            <h3 style={{zIndex:'999'}}>{t("testimonials")}</h3>
+            <p style={{zIndex:'999'}}>
               {t("showAll")}
               <img src={image12} />
             </p>

@@ -20,7 +20,7 @@ function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div className="container">
-          <Link className="navbar-brand" to="#">
+          <Link className="navbar-brand" to="/">
             <img src={image1} alt="Logo" />
           </Link>
           <button
@@ -61,7 +61,7 @@ function Navbar() {
                         ? "1px solid #1BACD1"
                         : "none",
                   }}
-                  to="/"
+                  to="/ai"
                   onClick={() => handleButtonClick("AI")}
                 >
                   {t("AI")}
