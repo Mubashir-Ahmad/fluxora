@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "welcome": "Fluxora",
     "ourStory": "NOTRE HISTOIRE",
@@ -34,3 +35,41 @@
     "burning": "Vous avez une idée brûlante d'IA, une question, ou vous voulez simplement discuter de notre travail ? Nous sommes tout ouïe ! Contactez-nous et notre équipe sympathique de Morningside AI sera prête à vous guider, à vous aider ou à partager votre enthousiasme. Faisons de votre voyage en IA un moment inoubliable ensemble.",
     "AIGeneratedFacelessContent": "Contenu généré par IA sans visage"
 }
+=======
+{
+    "welcome": "Fluxora",
+    "ourStory": "NOTRE HISTOIRE",
+    "ourStoryDescription": "Redéfinissez les paradigmes numériques et repoussez les limites de ce qui est possible",
+    "content": "Contenu",
+    "contentDescription": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    "contentStrategy": "Stratégie de contenu",
+    "services": "Services",
+    "blogs": "Blogs",
+    "testimonials": "Témoignages",
+    "showAll": "Afficher tout",
+    "readMore": "Lire la suite",
+    "Davidgillroy": "David Gillroy",
+    "AI": "IA",
+    "Web3.0": "Web3.0",
+    "aboutus": "À propos de ",
+    "us": "Nous",
+    "ethicalConsiderations": "Considérations éthiques dans le développement de l'IA",
+    "digitalArtist": "Artiste numérique chez Digital Group",
+    "testimonialQuote": "‘‘De nos jours, il n'est pas rare de voir les prêteurs adopter rapidement une nouvelle stratégie de prêt numérique pour rendre le processus web plus fluide et plus populaire’’",
+    "contact_us": "Nous contacter",
+    "shortformstrategy": "Stratégie de formulaire court",
+    "our": "Notre",
+    "content_acordion": "Fluxora exploite le traitement avancé du langage naturel pour fournir des solutions de stratégie de contenu basées sur les données, permettant aux entreprises d'optimiser leur contenu numérique et de toucher efficacement leur public cible.",
+    "contact": "Contact",
+    "future": "L'avenir vous attend",
+    "submit": "Soumettre",
+    "name": "Nom",
+    "story":"histoire",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "message": "Entrez votre message",
+    "contentautomation":"automatisation du contenu",
+    "burning": "Vous avez une idée brûlante d'IA, une question, ou vous voulez simplement discuter de notre travail ? Nous sommes tout ouïe ! Contactez-nous et notre équipe sympathique de Morningside AI sera prête à vous guider, à vous aider ou à partager votre enthousiasme. Faisons de votre voyage en IA un moment inoubliable ensemble.",
+    "AIGeneratedFacelessContent": "Contenu généré par IA sans visage"
+}
+>>>>>>> f7d8722 (ten commit)

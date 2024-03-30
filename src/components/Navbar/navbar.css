@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .h2{
     color: white;
 }
@@ -15,4 +16,23 @@
   
   .navbar-hidden .navbar-nav .nav-link.bordered {
     border: 1px solid #1BACD1;
+=======
+.h2{
+    color: white;
+}
+ 
+  .nav-item{
+    text-align: left;
+    padding-left: 35px;
+    line-height: 30px;
+  }
+  .navbar-hidden {
+    
+    transform: translateY(-360%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar-hidden .navbar-nav .nav-link.bordered {
+    border: 1px solid #1BACD1;
+>>>>>>> f7d8722 (ten commit)
   }

@@ -140,21 +140,39 @@ function Home() {
           isBottomAnimationVisible ? "slide-iin" : ""
         }`}
       >
-        <div className="row" style={{display:'flex',justifyContent:'center'}}>
-        <h3 className="aboutsection1_heading" style={{width:'0%'}}>{t("aboutus")}</h3> " "
-        <h3 className="aboutsection1_heading2" style={{width:'20%'}}>{t("us")}</h3>
-          {/* <p className="upersection1_content_SideA_P ">{t("our")} {t("story")} */}
-          {/* </p> */}
-         
+         <div className="row">
+        <h2 style={{color:'white',fontSize:'28px',textAlign:'left'}}>Welcome to Fluxora, where innovation meets tradition to forge the future.</h2>
+        <p style={{color:'white',fontSize:'22px',textAlign:'left',margin:'10px 0px'}}>At Fluxora, we believe in challenging the status quo to deliver unique, cutting-edge solutions in AI, Web3, and Content Strategy.</p>
+        <p style={{color:'white',fontSize:'22px',textAlign:'left'}}>Our mission is to empower businesses to navigate the ever-evolving digital landscape with confidence. Join us on a journey of transformation and let's redefine what's possible together.</p>
+        </div>
+        </div>
+      <div
+        ref={(node) => {
+          bottomRef.current = node;
+          belowSectionRef.current = node;
+        }}
+        className={`bottom-animation container ${
+          isBottomAnimationVisible ? "slide-iin" : ""
+        }`}
+      >
+        <div className="row" style={{display:'flex',justifyContent:'center',margin:'15px 0px'}}>
+        {/* <h3 className="aboutsection1_heading" style={{width:'0%'}}>{t("aboutus")}</h3> " "
+        <h3 className="aboutsection1_heading2" style={{width:'20%'}}>{t("us")}</h3>      */}
+        <h3 className="aboutsection1_heading" style={{width:'0%'}}>About</h3> " "
+        <h3 className="aboutsection1_heading2" style={{width:'20%'}}>Us</h3>
         </div>
         <div className="row">
-          <p className="upersection1_content_SideA_P2">
+          {/* <p className="upersection1_content_SideA_P2">
             {t("ourStoryDescription")}
+          </p> */}
+          <p className="upersection1_content_SideA_P2">
+          Fluxora is not just embracing the future; it is creating it.
           </p>
         </div>
         <div className="row">
           <div className="col-md ourstory">
-            <p className="upersection1_content_SideB_P">{t("first_content")}</p>
+            {/* <p className="upersection1_content_SideB_P">{t("first_content")}</p> */}
+            <p className="upersection1_content_SideB_P">Fluxora's journey began with a vision to create change over time. Founded by a team of visionaries passionate about technology and innovation, our foundation is built on a relentless pursuit of innovation, aiming to not only meet but exceed the expectations of the digital era and pave the way for groundbreaking achievements.</p>
             <Button
               type="button"
               className="btn btn-light upersection1_content_SideB_Button"
@@ -175,29 +193,29 @@ function Home() {
           </div>
           <div className="row" style={{ justifyContent: "center" }}>
             <div className="col-lg uppersection3_box1">
-              <h5>{t("content")}</h5>
-              <p>{t("contentDescription")}</p>
+              <h5>Content Strategy</h5>
+              <p style={{fontSize:'17px',textAlign:'justify',fontWeight:'500',fontFamily:'sans-serif'}}>In a world flooded with information, Fluxora crafts content that cuts through the noise. Our strategic approach ensures your message not only reaches but resonates with your audience, driving engagement and fostering lasting connections. Let's tell your story in a way that captivates and convinces.</p>
               <img src={image9} />
               <div className="overlay">
                 <div className="overlay-content">
                   <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("contentStrategy")}</p>
+                      <p>Content Strategy</p>
                     </Link>
                   </div>
                   <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("shortformstrategy")}</p>
+                      <p>Short Form Content</p>
                     </Link>
                   </div>
                   <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("AIGeneratedFacelessContent")}</p>
+                      <p>AI-Generated Faceless Content</p>
                     </Link>
                   </div>
                   <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("contentautomation")}</p>
+                      <p>Content Automation</p>
                     </Link>
                   </div>
                  
@@ -206,22 +224,22 @@ function Home() {
               </div>
             </div>
             <div className="col-lg uppersection3_box1">
-              <h5>{t("AI")}</h5>
-              <p>{t("contentDescription")}</p>
+              <h5>AI</h5>
+              <p style={{fontSize:'17px',textAlign:'justify',fontWeight:'500',fontFamily:'sans-serif'}}>At Fluxora, AI is more than just technology; it's the key to unlocking unprecedented opportunities for growth and innovation. Our AI solutions are designed to transform complex challenges into simple solutions, optimizing operations and enhancing decision-making processes. Embrace AI with Fluxora and lead the charge in your industry.</p>
               <img src={image9} />
               <div className="overlay">
                 <div className="overlay-content">
                 <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("contentStrategy")}</p>
+                      <p>Automation</p>
                     </Link>
                   </div>
                   <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("shortformstrategy")}</p>
+                      <p>Chatbots</p>
                     </Link>
                   </div>
-                  <div className="overlay_content_A">
+                  {/* <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
                       <p>{t("AIGeneratedFacelessContent")}</p>
                     </Link>
@@ -230,37 +248,37 @@ function Home() {
                     <Link className="overlay_link" to="/service?fromHome=true">
                       <p>{t("contentautomation")}</p>
                     </Link>
-                  </div>
+                  </div> */}
                   <img src={image10} />
                 </div>
               </div>
             </div>
             <div className="col-lg uppersection3_box1">
-              <h5>{t("Web3.0")}</h5>
-              <p>{t("contentDescription")}</p>
+              <h5>Web3</h5>
+              <p style={{fontSize:'17px',textAlign:'justify',fontWeight:'500',fontFamily:'sans-serif'}}>Step into the future with Fluxora's Web3 services, where decentralization opens up a new realm of possibilities. From blockchain to digital assets, our expertise empowers clients to navigate the Web3 space confidently. Whether it's launching an NFT project or integrating blockchain technology, Fluxora is your gateway to the next digital revolution.</p>
               <img src={image9} />
               <div className="overlay">
                 <div className="overlay-content">
                 <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("contentStrategy")}</p>
+                      <p>Marketing</p>
                     </Link>
                   </div>
                   <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("shortformstrategy")}</p>
+                      <p>Community Building</p>
                     </Link>
                   </div>
                   <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("AIGeneratedFacelessContent")}</p>
+                      <p>Smart Contract Services</p>
                     </Link>
                   </div>
-                  <div className="overlay_content_A">
+                  {/* <div className="overlay_content_A">
                     <Link className="overlay_link" to="/service?fromHome=true">
                       <p>{t("contentautomation")}</p>
                     </Link>
-                  </div>
+                  </div> */}
                   <img src={image10} />
                 </div>
               </div>
