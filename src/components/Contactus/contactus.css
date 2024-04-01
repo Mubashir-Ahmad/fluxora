@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .sst{
     background: linear-gradient(157.81deg,#def9fa -43.27%,#bef3f5 -21.24%,#9dedf0 12.19%,#7de7eb 29.82%,#5ce1e6 51.94%,#33bbcf 90.29%);
     width: 150px;
@@ -57,64 +57,5 @@
   .form-control {
     padding-left: 50px; /* Adjust the left padding to accommodate the icon */
   }
-=======
-.sst{
-    background: linear-gradient(157.81deg,#def9fa -43.27%,#bef3f5 -21.24%,#9dedf0 12.19%,#7de7eb 29.82%,#5ce1e6 51.94%,#33bbcf 90.29%);
-    width: 150px;
-    height: 40px;
-}
-.contact_heading{
-    color: white;
-    font-family: Montserrat,sans-serif!important;
-    text-align: left;
-    font-weight: 600;
-}
-.contact_para{
-    color: white;
-    text-align: left;
-    font-family: Montserrat,sans-serif!important;
-}
-.contact_us{
-    padding: 50px 5px;
-}
-.aa{
-    border: none;
-    border-bottom: 1px solid white;
-    background-color: transparent;
-    color: white;
-    opacity: 1;
-    height: 90px;
-}
-.aa::placeholder{
-    color: white;
-    opacity: 1;
-    padding-top: 25px;
-}
-.contact_container{
-    background-color: rgba(27, 172, 209, 0.1);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-    background-image: url('../../asset/image/Frame 41.png');
-/* background: linear-gradient(180deg, rgba(19,101,141,1) 0%, rgba(0,0,0,1) 72%); */
-}
-.input-icon {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .input-icon img {
-    width: 25px; /* Adjust the size of the icon as needed */
-  }
-  
-  .form-group {
-    position: relative;
-  }
-  
-  .form-control {
-    padding-left: 50px; /* Adjust the left padding to accommodate the icon */
-  }
->>>>>>> f7d8722 (ten commit)
+
   
