@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./home.css";
+import ProgressBar from 'react-bootstrap/ProgressBar';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -20,8 +21,11 @@ import image9 from "../../asset/image/Frame 16.png";
 import image10 from "../../asset/image/Vector (1).png";
 import image11 from "../../asset/image/a7.png";
 import image12 from "../../asset/image/chevron-right.png";
-import image13 from "../../asset/image/person.png";
-import image14 from "../../asset/image/a8.png";
+import image13 from "../../asset/image/home-image-1 1.png"
+import image20 from "../../asset/image/airbnb.png"
+import image21 from "../../asset/image/g18.png"
+import image22 from "../../asset/image/Group 481736.png"
+import image23 from "../../asset/image/Group 481737.png"
 import Footer from "../footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import { Link, useNavigate } from "react-router-dom";
@@ -93,7 +97,7 @@ function Home() {
       if (window.innerWidth < 800) {
         setSlidesPerView(1);
       } else {
-        setSlidesPerView(2);
+        setSlidesPerView(3);
       }
       if (window.innerWidth < 990) {
         setSlidesPerVieww(1);
@@ -140,10 +144,27 @@ function Home() {
           isBottomAnimationVisible ? "slide-iin" : ""
         }`}
       >
-         <div className="row">
-        <h2 style={{color:'white',fontSize:'28px',textAlign:'left'}}>Welcome to Fluxora, where innovation meets tradition to forge the future.</h2>
-        <p style={{color:'white',fontSize:'22px',textAlign:'left',margin:'10px 0px'}}>At Fluxora, we believe in challenging the status quo to deliver unique, cutting-edge solutions in AI, Web3, and Content Strategy.</p>
-        <p style={{color:'white',fontSize:'22px',textAlign:'left'}}>Our mission is to empower businesses to navigate the ever-evolving digital landscape with confidence. Join us on a journey of transformation and let's redefine what's possible together.</p>
+         <div className="row" style={{backgroundColor:'#263033',height:'29vmax'}}>
+          <div className="col-md" style={{paddingTop:'10px'}}>
+          <img src={image13} style={{width:'52%',height:'90%',zIndex:'999'}}/>
+          </div>
+          <div className="col-md upersection1_img" style={{display:"flex",flexDirection:'column',justifyContent:'flex-start'}}>
+            <div style={{borderLeft:'solid 4px #1BACD1',marginTop:'10px'}}>
+              <h1 style={{color:'#1BACD1',fontSize:'39px',textAlign:'left',fontFamily:'sans-serif',fontWeight:'600',paddingLeft:'10px' }}>Fluxora</h1>
+            </div>
+              <p style={{color:'#1BACD1',fontSize:'22px',textAlign:'left',paddingLeft:'15px'}}>Technology</p>
+          <h2 style={{color:'white',fontSize:'22px',fontWeight:'600',textAlign:'left'}}>Welcome to Fluxora, where innovation meets tradition to forge the future.</h2>
+        <p style={{color:'white',fontSize:'22px',textAlign:'left',fontWeight:'600',margin:'10px 0px'}}>At Fluxora, we believe in challenging the status quo to deliver unique, cutting-edge solutions in AI, Web3, and Content Strategy.</p>
+        <p style={{color:'white',fontSize:'22px',textAlign:'left',fontWeight:'600'}}>Our mission is to empower businesses to navigate the ever-evolving digital landscape with confidence. Join us on a journey of transformation and let's redefine what's possible together.</p>    
+        <Button
+              type="button"
+              className="btn btn-light fluxora_btn"
+              onClick={handleButtonClick}
+            >
+              Learn More
+            </Button>
+          </div>
+        
         </div>
         </div>
       <div
@@ -158,8 +179,8 @@ function Home() {
         <div className="row" style={{display:'flex',justifyContent:'center',margin:'15px 0px'}}>
         {/* <h3 className="aboutsection1_heading" style={{width:'0%'}}>{t("aboutus")}</h3> " "
         <h3 className="aboutsection1_heading2" style={{width:'20%'}}>{t("us")}</h3>      */}
-        <h3 className="aboutsection1_heading" style={{width:'0%'}}>About</h3> " "
-        <h3 className="aboutsection1_heading2" style={{width:'20%'}}>Us</h3>
+        <h3 className="aboutsection1_heading" style={{width:'0%'}}>OUR</h3> " "
+        <h3 className="aboutsection1_heading2" style={{width:'25%'}}>STORY</h3>
         </div>
         <div className="row">
           {/* <p className="upersection1_content_SideA_P2">
@@ -185,6 +206,43 @@ function Home() {
             <img src={image3} className="upersection1_img" />
           </div>
         </div>
+          <div className="row">
+            <div className="col-md">
+              <div style={{borderLeft:'solid 4px #1BACD1',marginTop:'10px'}}>
+                <h2 style={{color:'white',fontWeight:'600'}}>
+                We work with big and small companies
+                </h2>
+              </div>
+              <h3 style={{color:'white',fontSize:'22px',textAlign:'left',fontWeight:'600'}}>
+              At Fluxora, we pride ourselves on our versatile expertise and our ability to cater to the needs of both large enterprises and small businesses. Our proficiency in various domains  is reflected in our success rates:
+              </h3>
+              <h3 style={{color:'white',fontSize:'22px',textAlign:'left',fontWeight:'600'}}>
+              Partner with Fluxora, where expertise meets excellence, regardless of the size of your business.
+              </h3>
+            </div>
+            <div className="col-md" style={{marginTop:'10px'}}>
+                  <div className="progress_bar">
+                    <p>AI DEVELOPMENT</p>
+                    <p>92%</p>
+                  </div>
+            <ProgressBar variant="success" now={90} />
+            <div className="progress_bar">
+                    <p>INFORMATION ARCHITECTURE</p>
+                    <p>98%</p>
+                  </div>
+            <ProgressBar variant="info" now={98} />
+            <div className="progress_bar">
+                    <p>User Experiences</p>
+                    <p>95%</p>
+              </div>
+            <ProgressBar variant="warning" now={95} />
+            <div className="progress_bar">
+                    <p>USER INTERFACE</p>
+                    <p>88%</p>
+                  </div>
+            <ProgressBar variant="danger" now={88} />
+            </div>
+          </div>
       </div>
       <div className="yyy" style={{ marginTop: "10%" }}>
         <div className="container uppersection3">
@@ -290,13 +348,13 @@ function Home() {
         <div className="row">
       <div className="upersection2_img">
         {/* <img src={image14} className="uppersection2_content" /> */}
-          <div className="col-md home_img">
+          {/* <div className="col-md home_img">
           <img src={image4} alt="*"/>
-          </div>
-          <div className="col-md home_img"><img src={image5} alt="*"/></div>
-          <div className="col-md home_img"><img src={image6} alt="*"/></div>
-          <div className="col-md home_img"><img src={image7} alt="*"/></div>
-          <div className="col-md home_img"><img src={image8} alt="*"/></div>
+          </div> */}
+          <div className="col-md home_img"><img src={image20} alt="*"/></div>
+          <div className="col-md home_img"><img src={image21} alt="*"/></div>
+          <div className="col-md home_img"><img src={image22} alt="*"/></div>
+          <div className="col-md home_img"><img src={image23} alt="*"/></div>
         </div>
       </div>
       </div>
@@ -304,7 +362,7 @@ function Home() {
       <div className="blog_container">
         <div className="container">
           <div className="row" style={{ padding: "30px 0px" }}>
-            <h4 className="blog_heading">{t("blogs")}</h4>
+            <h4 className="blog_heading">Blogs</h4>
           </div>
           <div className="row" style={{ justifyContent: "center" }}>
             <Swiper
@@ -365,16 +423,16 @@ function Home() {
      
         <div className="uppersection5">
           <div className="heading_content">
-            <h3 style={{zIndex:'999'}}>{t("testimonials")}</h3>
+            <h3 style={{zIndex:'999'}}>Testimonials</h3>
             <p style={{zIndex:'999'}}>
-              {t("showAll")}
+              Show all
               <img src={image12} />
             </p>
           </div>
           <Swiper
             slidesPerView={slidesPerView}
-            navigation={true}
-            modules={[Navigation, Autoplay]}
+            // navigation={true}
+            modules={[Autoplay]}
             autoplay={{ delay: 5000 }}
             className="mySwiper"
           >
@@ -383,7 +441,7 @@ function Home() {
                 <div className="swiper_content">
                   <img src={image15} />
                   <div className="swiper_box">
-                    <p className="swiper_p3">{t("contentDescription")}</p>
+                    <p className="swiper_p3">AI is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
                   </div>
                   <div className="swiper_box1">
                     <img src={image16} />
@@ -400,7 +458,7 @@ function Home() {
                 <div className="swiper_content">
                   <img src={image15} />
                   <div className="swiper_box">
-                    <p className="swiper_p3">{t("contentDescription")}</p>
+                    <p className="swiper_p3">AI is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
                   </div>
                   <div className="swiper_box1">
                     <img src={image16} />
@@ -417,7 +475,7 @@ function Home() {
                 <div className="swiper_content">
                   <img src={image15} />
                   <div className="swiper_box">
-                    <p className="swiper_p3">{t("contentDescription")}</p>
+                    <p className="swiper_p3">AI is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
                   </div>
                   <div className="swiper_box1">
                     <img src={image16} />
@@ -434,7 +492,7 @@ function Home() {
                 <div className="swiper_content">
                   <img src={image15} />
                   <div className="swiper_box">
-                    <p className="swiper_p3">{t("contentDescription")}</p>
+                    <p className="swiper_p3">AI is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
                   </div>
                   <div className="swiper_box1">
                     <img src={image16} />
@@ -451,7 +509,7 @@ function Home() {
                 <div className="swiper_content">
                   <img src={image15} />
                   <div className="swiper_box">
-                    <p className="swiper_p3">{t("contentDescription")}</p>
+                    <p className="swiper_p3">AI is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
                   </div>
                   <div className="swiper_box1">
                     <img src={image16} />
@@ -468,7 +526,7 @@ function Home() {
                 <div className="swiper_content">
                   <img src={image15} />
                   <div className="swiper_box">
-                    <p className="swiper_p3">{t("contentDescription")}</p>
+                    <p className="swiper_p3">AI is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
                   </div>
                   <div className="swiper_box1">
                     <img src={image16} />
@@ -485,7 +543,7 @@ function Home() {
                 <div className="swiper_content">
                   <img src={image15} />
                   <div className="swiper_box">
-                    <p className="swiper_p3">{t("contentDescription")}</p>
+                    <p className="swiper_p3">AI is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
                   </div>
                   <div className="swiper_box1">
                     <img src={image16} />
@@ -502,7 +560,7 @@ function Home() {
                 <div className="swiper_content">
                   <img src={image15} />
                   <div className="swiper_box">
-                    <p className="swiper_p3">{t("contentDescription")}</p>
+                    <p className="swiper_p3">AI is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
                   </div>
                   <div className="swiper_box1">
                     <img src={image16} />

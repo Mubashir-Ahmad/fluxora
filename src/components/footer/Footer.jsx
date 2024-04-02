@@ -6,6 +6,11 @@ import image01 from "../../asset/image/instagram.png";
 import image02 from "../../asset/image/twitter.png";
 import image04 from "../../asset/image/Google.png";
 import image03 from "../../asset/image/linkedin.png";
+// import image03 from "../../asset/image/linkedin.png";
+import image5 from "../../asset/image/q5.png";
+import image6 from "../../asset/image/q4.png";
+import image7 from "../../asset/image/q1.png";
+import image8 from "../../asset/image/q3.png";
 import { useTranslation } from "react-i18next";
 import classNames from "classnames";
 import i18next from "i18next";
@@ -59,11 +64,10 @@ function Footer() {
           <div className="sevice-content">
             <div className="heading">
               <img src={image1} />
-              <h5 className="section-tittle1">Fluxora</h5>
+              {/* <h5 className="section-tittle1">Fluxora</h5> */}
             </div>
             <p className="ulfooter">
-              Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam.
+            At Fluxora, we believe in challenging the status quo to deliver unique, cutting-edge solutions in AI, Web3, and Content Strategy
             </p>
           </div>
           <div className="sevice-content">
@@ -99,7 +103,7 @@ function Footer() {
               <h5>Contact us</h5>
               </Button>
             <div className="icons">
-              <img src={image01} style={{
+              {/* <img src={image01} style={{
                     background: 'white',
                     width: '10%',
                     color: 'white',
@@ -110,7 +114,11 @@ function Footer() {
                     width: '10%',
                     color: 'white',
                     borderRadius:'10px'
-              }}/>
+              }}/> */}
+              <img src={image5} />
+              <img src={image6} />
+              <img src={image7} />
+              <img src={image8} />
               <img src={image03} />
             </div>
             <div className="language-select" style={{margin:'10px 0px'}}>
