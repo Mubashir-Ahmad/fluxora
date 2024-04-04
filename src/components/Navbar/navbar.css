@@ -13,7 +13,9 @@
     transform: translateY(-360%);
     transition: transform 0.3s ease-in-out;
   }
-  
+  .navbar-nav .nav-link:hover {
+    border: 1px solid #1BACD1 !important;
+  }
   .navbar-hidden .navbar-nav .nav-link.bordered {
     border: 1px solid #1BACD1;
   }

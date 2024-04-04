@@ -26,6 +26,10 @@ import image20 from "../../asset/image/airbnb.png"
 import image21 from "../../asset/image/g18.png"
 import image22 from "../../asset/image/Group 481736.png"
 import image23 from "../../asset/image/Group 481737.png"
+import image24 from "../../asset/image/test1.png"
+import image25 from "../../asset/image/test2.png"
+import image26 from "../../asset/image/test3.png"
+import image27 from "../../asset/image/test5.png"
 import Footer from "../footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import { Link, useNavigate } from "react-router-dom";
@@ -140,31 +144,32 @@ function Home() {
           bottomRef.current = node;
           belowSectionRef.current = node;
         }}
-        className={`bottom-animation container ${
+        className={`bottom-animation container-fluid ${
           isBottomAnimationVisible ? "slide-iin" : ""
         }`}
       >
-         <div className="row" style={{backgroundColor:'#263033',height:'29vmax'}}>
-          <div className="col-md" style={{paddingTop:'10px'}}>
-          <img src={image13} style={{width:'52%',height:'90%',zIndex:'999'}}/>
+         <div className="row fluxora_technology">
+          <div className="col-lg" style={{paddingTop:'10px'}}>
+          <img src={image13} className="fluxora_technology_img"/>
           </div>
-          <div className="col-md upersection1_img" style={{display:"flex",flexDirection:'column',justifyContent:'flex-start'}}>
+          <div className="col-lg" style={{paddingLeft: '10px'}} >
+            <div className="fluxora_tech .upersection1_imgg" style={{display:"flex",flexDirection:'column',justifyContent:'flex-start'}}>
             <div style={{borderLeft:'solid 4px #1BACD1',marginTop:'10px'}}>
-              <h1 style={{color:'#1BACD1',fontSize:'39px',textAlign:'left',fontFamily:'sans-serif',fontWeight:'600',paddingLeft:'10px' }}>Fluxora</h1>
+              <h1 style={{color:'#1BACD1',fontSize:'39px',textAlign:'left',fontWeight:'600',paddingLeft:'30px' }}className="lop">Fluxora</h1>
             </div>
-              <p style={{color:'#1BACD1',fontSize:'22px',textAlign:'left',paddingLeft:'15px'}}>Technology</p>
-          <h2 style={{color:'white',fontSize:'22px',fontWeight:'600',textAlign:'left'}}>Welcome to Fluxora, where innovation meets tradition to forge the future.</h2>
-        <p style={{color:'white',fontSize:'22px',textAlign:'left',fontWeight:'600',margin:'10px 0px'}}>At Fluxora, we believe in challenging the status quo to deliver unique, cutting-edge solutions in AI, Web3, and Content Strategy.</p>
-        <p style={{color:'white',fontSize:'22px',textAlign:'left',fontWeight:'600'}}>Our mission is to empower businesses to navigate the ever-evolving digital landscape with confidence. Join us on a journey of transformation and let's redefine what's possible together.</p>    
+              <p style={{color:'#1BACD1',fontSize:'22px',textAlign:'left',paddingLeft:'33px'}} className="loop_1">Technology</p>
+          <h2 style={{color:'white',fontSize:'22px',fontWeight:'500',textAlign:'justify',marginTop:'15px',paddingLeft:'30px'}} className="opensans">Welcome to <span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora</span>, where innovation meets tradition to forge the future.</h2>
+        <p style={{color:'white',fontSize:'22px',textAlign:'justify',fontWeight:'500',margin:'10px 0px' ,paddingLeft:'30px'} } className="opensans">At <span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora</span>, we believe in challenging the status quo to deliver unique, cutting-edge solutions in AI, Web3, and Content Strategy.</p>
+        <p style={{color:'white',fontSize:'22px',textAlign:'justify',fontWeight:'500',paddingLeft:'30px'}} className="opensans" >Our mission is to empower businesses to navigate the ever-evolving digital landscape with confidence. Join us on a journey of transformation and let's redefine what's possible together.</p>    
         <Button
               type="button"
               className="btn btn-light fluxora_btn"
               onClick={handleButtonClick}
             >
-              Learn More
+              <p className="opensans" style={{margin:'0px',textAlign:'center',color:'white',letterSpacing:2}}>LEARN MORE</p>
             </Button>
           </div>
-        
+          </div>
         </div>
         </div>
       <div
@@ -172,55 +177,64 @@ function Home() {
           bottomRef.current = node;
           belowSectionRef.current = node;
         }}
-        className={`bottom-animation container ${
+        className={`bottom-animation container-fluid ${
           isBottomAnimationVisible ? "slide-iin" : ""
         }`}
+        style={{
+          width:'90%',
+          paddingTop:'50px'
+          // , paddingLeft:'40px',
+          // paddingRight:'40px'
+        }}
       >
-        <div className="row" style={{display:'flex',justifyContent:'center',margin:'15px 0px'}}>
+        <div className="row" style={{display:'flex',justifyContent:'center',margin:'40px 0px'}}>
         {/* <h3 className="aboutsection1_heading" style={{width:'0%'}}>{t("aboutus")}</h3> " "
         <h3 className="aboutsection1_heading2" style={{width:'20%'}}>{t("us")}</h3>      */}
-        <h3 className="aboutsection1_heading" style={{width:'0%'}}>OUR</h3> " "
-        <h3 className="aboutsection1_heading2" style={{width:'25%'}}>STORY</h3>
+        <h3 className="aa_heading" >OUR<span className="a_heading2" > STORY</span> </h3> 
+        {/* " "
+        <h3 className="aboutsection1_heading2" style={{width:'25%'}}>STORY</h3> */}
         </div>
         <div className="row">
           {/* <p className="upersection1_content_SideA_P2">
             {t("ourStoryDescription")}
           </p> */}
-          <p className="upersection1_content_SideA_P2">
-          Fluxora is not just embracing the future; it is creating it.
+          <p className="upersection1_content_SideA_P2 service_ai_heading">
+          <span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora </span>is not just embracing the future; it is creating it.
           </p>
         </div>
         <div className="row">
-          <div className="col-md ourstory">
+          <div className="col-lg ourstory">
             {/* <p className="upersection1_content_SideB_P">{t("first_content")}</p> */}
-            <p className="upersection1_content_SideB_P">Fluxora's journey began with a vision to create change over time. Founded by a team of visionaries passionate about technology and innovation, our foundation is built on a relentless pursuit of innovation, aiming to not only meet but exceed the expectations of the digital era and pave the way for groundbreaking achievements.</p>
+            <p className="upersection1_content_SideB_P service_ai_heading"><span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora's</span> journey began with a vision to create change over time. Founded by a team of visionaries passionate about technology and innovation, our foundation is built on a relentless pursuit of innovation, aiming to not only meet but exceed the expectations of the digital era and pave the way for groundbreaking achievements.</p>
             <Button
               type="button"
               className="btn btn-light upersection1_content_SideB_Button"
               onClick={handleButtonClick}
             >
-              Learn More About Us
+              <p className="opensans" style={{fontWeight:'600',margin:'0px',textAlign:'center'}}>
+                Learn More About Us
+                </p>
             </Button>
           </div>
-          <div className="col-md">
+          <div className="col-lg">
             <img src={image3} className="upersection1_img" />
           </div>
         </div>
-          <div className="row">
-            <div className="col-md">
+          <div className="row" style={{width:'97%',paddingTop:'10%'}}>
+            <div className="col-lg" style={{marginTop:'10px'}}>
               <div style={{borderLeft:'solid 4px #1BACD1',marginTop:'10px'}}>
-                <h2 style={{color:'white',fontWeight:'600'}}>
+                <h2 style={{color:'white',fontWeight:'500',position:'relative',zIndex:999,fontSize:'35px',textAlign:'justify',marginLeft:'25px'}} className="lop">
                 We work with big and small companies
                 </h2>
               </div>
-              <h3 style={{color:'white',fontSize:'22px',textAlign:'left',fontWeight:'600'}}>
-              At Fluxora, we pride ourselves on our versatile expertise and our ability to cater to the needs of both large enterprises and small businesses. Our proficiency in various domains  is reflected in our success rates:
+              <h3 className="service_ai" style={{color: '#A9A7B0',lineHeight:'2',margin:'30px 10px 10px 27px',fontSize:'22px',fontWeight:'500',position:'relative',zIndex:999,textAlign:'justify'}}>
+              At <span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora</span>, we pride ourselves on our versatile expertise and our ability to cater to the needs of both large enterprises and small businesses. Our proficiency in various domains  is reflected in our success rates:
               </h3>
-              <h3 style={{color:'white',fontSize:'22px',textAlign:'left',fontWeight:'600'}}>
-              Partner with Fluxora, where expertise meets excellence, regardless of the size of your business.
+              <h3 className="service_ai" style={{color: '#A9A7B0',lineHeight:'2',margin:'30px 10px 10px 27px',fontSize:'22px',textAlign:'justify',fontWeight:'500',position:'relative',zIndex:999}}>
+              Partner with <span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora</span>, where expertise meets excellence, regardless of the size of your business.
               </h3>
             </div>
-            <div className="col-md" style={{marginTop:'10px'}}>
+            <div className="col-lg" style={{marginTop:'10px'}}>
                   <div className="progress_bar">
                     <p>AI DEVELOPMENT</p>
                     <p>92%</p>
@@ -232,7 +246,7 @@ function Home() {
                   </div>
             <ProgressBar variant="info" now={98} />
             <div className="progress_bar">
-                    <p>User Experiences</p>
+                    <p>USER EXPERIENCES</p>
                     <p>95%</p>
               </div>
             <ProgressBar variant="warning" now={95} />
@@ -245,14 +259,14 @@ function Home() {
           </div>
       </div>
       <div className="yyy" style={{ marginTop: "10%" }}>
-        <div className="container uppersection3">
-          <div className="row" style={{ padding: "60px 0px" }}>
-            <h4 className="uppersection3_heading">Services</h4>
+        <div className="container-fluid uppersection3" style={{width:'85%',paddingBottom:'5%'}}>
+          <div className="row" style={{ padding: "65px 0px" }}>
+            <h4 className="uppersection3_heading service_ai_heading">Services</h4>
           </div>
           <div className="row" style={{ justifyContent: "center" }}>
             <div className="col-lg uppersection3_box1">
-              <h5>Content Strategy</h5>
-              <p style={{fontSize:'17px',textAlign:'justify',fontWeight:'500',fontFamily:'sans-serif'}}>In a world flooded with information, Fluxora crafts content that cuts through the noise. Our strategic approach ensures your message not only reaches but resonates with your audience, driving engagement and fostering lasting connections. Let's tell your story in a way that captivates and convinces.</p>
+              <h5 className="service_ai_heading">Content Strategy</h5>
+              <p className="service_ai" style={{color:'white',fontSize:'17px',textAlign:'justify',fontWeight:'500'}}>In a world flooded with information, Fluxora crafts content that cuts through the noise. Our strategic approach ensures your message not only reaches but resonates with your audience, driving engagement and fostering lasting connections. Let's tell your story in a way that captivates and convinces.</p>
               <img src={image9} />
               <div className="overlay">
                 <div className="overlay-content">
@@ -282,8 +296,8 @@ function Home() {
               </div>
             </div>
             <div className="col-lg uppersection3_box1">
-              <h5>AI</h5>
-              <p style={{fontSize:'17px',textAlign:'justify',fontWeight:'500',fontFamily:'sans-serif'}}>At Fluxora, AI is more than just technology; it's the key to unlocking unprecedented opportunities for growth and innovation. Our AI solutions are designed to transform complex challenges into simple solutions, optimizing operations and enhancing decision-making processes. Embrace AI with Fluxora and lead the charge in your industry.</p>
+              <h5 className="service_ai_heading">AI</h5>
+              <p className="service_ai" style={{color:'white',fontSize:'17px',textAlign:'justify',fontWeight:'500'}}>At Fluxora, AI is more than just technology; it's the key to unlocking unprecedented opportunities for growth and innovation. Our AI solutions are designed to transform complex challenges into simple solutions, optimizing operations and enhancing decision-making processes. Embrace AI with Fluxora and lead the charge in your industry.</p>
               <img src={image9} />
               <div className="overlay">
                 <div className="overlay-content">
@@ -297,23 +311,14 @@ function Home() {
                       <p>Chatbots</p>
                     </Link>
                   </div>
-                  {/* <div className="overlay_content_A">
-                    <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("AIGeneratedFacelessContent")}</p>
-                    </Link>
-                  </div>
-                  <div className="overlay_content_A">
-                    <Link className="overlay_link" to="/service?fromHome=true">
-                      <p>{t("contentautomation")}</p>
-                    </Link>
-                  </div> */}
                   <img src={image10} />
                 </div>
               </div>
             </div>
             <div className="col-lg uppersection3_box1">
-              <h5>Web3</h5>
-              <p style={{fontSize:'17px',textAlign:'justify',fontWeight:'500',fontFamily:'sans-serif'}}>Step into the future with Fluxora's Web3 services, where decentralization opens up a new realm of possibilities. From blockchain to digital assets, our expertise empowers clients to navigate the Web3 space confidently. Whether it's launching an NFT project or integrating blockchain technology, Fluxora is your gateway to the next digital revolution.</p>
+              <h5 className="service_ai_heading">Web3.0</h5>
+
+              <p style={{color:'white',fontSize:'17px',textAlign:'justify',fontWeight:'500',}} className="service_ai">Step into the future with Fluxora's Web3 services, where decentralization opens up a new realm of possibilities. From blockchain to digital assets, our expertise empowers clients to navigate the Web3 space confidently. Whether it's launching an NFT project or integrating blockchain technology, Fluxora is your gateway to the next digital revolution.</p>
               <img src={image9} />
               <div className="overlay">
                 <div className="overlay-content">
@@ -345,24 +350,26 @@ function Home() {
         </div>
       </div>
       <div className="container-fluid">
-        <div className="row">
+        <div className="row fluxora-waw">
       <div className="upersection2_img">
         {/* <img src={image14} className="uppersection2_content" /> */}
           {/* <div className="col-md home_img">
           <img src={image4} alt="*"/>
           </div> */}
+          <div className="home_image_box">
           <div className="col-md home_img"><img src={image20} alt="*"/></div>
           <div className="col-md home_img"><img src={image21} alt="*"/></div>
           <div className="col-md home_img"><img src={image22} alt="*"/></div>
           <div className="col-md home_img"><img src={image23} alt="*"/></div>
         </div>
+          </div>
       </div>
       </div>
       <div className="yyy">
       <div className="blog_container">
         <div className="container">
-          <div className="row" style={{ padding: "30px 0px" }}>
-            <h4 className="blog_heading">Blogs</h4>
+          <div className="row" style={{ padding: "65px 0px" }}>
+            <h4 className="blog_heading service_ai_heading">Blogs</h4>
           </div>
           <div className="row" style={{ justifyContent: "center" }}>
             <Swiper
@@ -376,7 +383,7 @@ function Home() {
                   {" "}
                   <div className="col-lg uppersection4_box1">
                     <img src={image11} style={{zIndex:'999'}} />
-                    <p>{t("ethicalConsiderations")}</p>
+                    <p>Ethical Considerations in AI Development</p>
                   </div>
                 </Link>
               </SwiperSlide>
@@ -385,7 +392,7 @@ function Home() {
                   {" "}
                   <div className="col-lg uppersection4_box1">
                     <img src={image11} />
-                    <p>{t("ethicalConsiderations")}</p>
+                    <p>Ethical Considerations in AI Development</p>
                   </div>
                 </Link>
               </SwiperSlide>
@@ -394,7 +401,7 @@ function Home() {
                   {" "}
                   <div className="col-lg uppersection4_box1">
                     <img src={image11} />
-                    <p>{t("ethicalConsiderations")}</p>
+                    <p>Ethical Considerations in AI Development</p>
                   </div>
                 </Link>
               </SwiperSlide>
@@ -403,7 +410,7 @@ function Home() {
                   {" "}
                   <div className="col-lg uppersection4_box1">
                     <img src={image11} />
-                    <p>{t("ethicalConsiderations")}</p>
+                    <p>Ethical Considerations in AI Development</p>
                   </div>
                 </Link>
               </SwiperSlide>
@@ -429,14 +436,70 @@ function Home() {
               <img src={image12} />
             </p>
           </div>
-          <Swiper
+          {/* <Swiper
             slidesPerView={slidesPerView}
-            // navigation={true}
+            navigation={true}
             modules={[Autoplay]}
             autoplay={{ delay: 5000 }}
             className="mySwiper"
-          >
-            <SwiperSlide>
+          > */}
+
+            {/* <SwiperSlide> */}
+            <div className="container-fluid">
+            <div className="row mySwipper">
+              <div className="col-lg swipper_box1">
+                <div className="swiper_content">
+                  <img src={image27} />
+                  <div className="swiper_box">
+                    <p className="swiper_p3" style={{position:'relative',zIndex:'999'}}>AI is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
+                  </div>
+                  <div className="swiper_box1">
+                    <img src={image25} />
+                    <div className="swiper_box2">
+                      <p className="swiper_box2_para">Herman Jensen</p>
+                      <p className="swiper_box2_para1">Found & Leader</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {/* </SwiperSlide>
+            <SwiperSlide> */}
+              <div className=" col-lg swipper_box1">
+                <div className="swiper_content">
+                  <img src={image27} />
+                  <div className="swiper_box">
+                    <p className="swiper_p3">AI makes your life easier. If you're lucky to have it, you're lucky.</p>
+                  </div>
+                  <div className="swiper_box1">
+                    <img src={image24} />
+                    <div className="swiper_box2">
+                      <p className="swiper_box2_para">Steve Mark</p>
+                      <p className="swiper_box2_para1">Found & Leader</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {/* </SwiperSlide>
+            <SwiperSlide> */}
+              <div className="col-lg swipper_box1">
+                <div className="swiper_content">
+                  <img src={image27} />
+                  <div className="swiper_box">
+                    <p className="swiper_p3">It is usually people in the Data business, Fintech, and Software trade that are really rich.</p>
+                  </div>
+                  <div className="swiper_box1">
+                    <img src={image26} />
+                    <div className="swiper_box2">
+                      <p className="swiper_box2_para">Kenn Gallagher</p>
+                      <p className="swiper_box2_para1">Found & Leader</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              </div>
+            {/* </SwiperSlide> */}
+            {/* <SwiperSlide>
               <div className="swipper_box1">
                 <div className="swiper_content">
                   <img src={image15} />
@@ -537,42 +600,8 @@ function Home() {
                   </div>
                 </div>
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="swipper_box1">
-                <div className="swiper_content">
-                  <img src={image15} />
-                  <div className="swiper_box">
-                    <p className="swiper_p3">AI is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
-                  </div>
-                  <div className="swiper_box1">
-                    <img src={image16} />
-                    <div className="swiper_box2">
-                      <p className="swiper_box2_para">Kenn Gallagher</p>
-                      <p className="swiper_box2_para1">Found & Leader</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="swipper_box1">
-                <div className="swiper_content">
-                  <img src={image15} />
-                  <div className="swiper_box">
-                    <p className="swiper_p3">AI is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
-                  </div>
-                  <div className="swiper_box1">
-                    <img src={image16} />
-                    <div className="swiper_box2">
-                      <p className="swiper_box2_para">Kenn Gallagher</p>
-                      <p className="swiper_box2_para1">Found & Leader</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
+            </SwiperSlide> */}
+          {/* </Swiper> */}
         </div>
       </div>
       <Footer />

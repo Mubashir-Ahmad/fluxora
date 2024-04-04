@@ -65,7 +65,7 @@ function Navbar() {
                   to="/ai"
                   onClick={() => handleButtonClick("AI")}
                 >
-                  {t("AI")}
+                  AI
                 </Link>
               </li>
               <li className="nav-item">
@@ -78,7 +78,7 @@ function Navbar() {
                   to="/aboutus"
                   onClick={() => handleButtonClick("About")}
                 >
-                  {t("aboutus")}
+                  About
                 </Link>
               </li>
               <li className="nav-item">
@@ -97,7 +97,7 @@ function Navbar() {
                   }}
                   onClick={() => handleButtonClick("Services")}
                 >
-                  {t("services")}
+                  Services
                 </Link>
               </li>
               <li className="nav-item">
@@ -115,7 +115,7 @@ function Navbar() {
                   to="/blog"
                   onClick={() => handleButtonClick("Blogs")}
                 >
-                  {t("blogs")}
+                Blogs
                 </Link>
               </li>
               <li className="nav-item">
@@ -125,8 +125,9 @@ function Navbar() {
                     activeButton === "Light" && "active"
                   }`}
                   onClick={() => handleButtonClick("Light")}
+                  style={{fontWeight:'500'}}
                 >
-                  {t("contact_us")}
+                <h5 style={{margin:'0px',textAlign:'center',fontWeight:'700'}}>Contact Us</h5>
                 </button>
               </li>
             </ul>
