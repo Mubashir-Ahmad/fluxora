@@ -15,6 +15,11 @@
     width: 8%;
     height: 0%;
 }
+.footer_english{   
+        font-family: "DM Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+}
 .footer{
     display: flex;
     justify-content: space-evenly;
@@ -75,6 +80,8 @@ h4{
     font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  letter-spacing: 1px;
+    font-weight: 600;
   }
   .icons {
     display: flex;

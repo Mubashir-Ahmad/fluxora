@@ -100,8 +100,8 @@ function Footer() {
           <div className="sevice-content align-items-center">
             {/* <div className="section-tittle"> */}
             {/* <img sr */}
-            <Button variant="light" style={{margin:'20px 0px',padding:'11px 0px' , width:'85%'}} onClick={()=>navigate('/contactus')}>
-              <h5 style={{margin:'0px',textAlign:'center',fontWeight:'700'}}>Contact Us</h5>
+            <Button variant="light" style={{margin:'20px 0px' , width:'75%',height:'25%'}} onClick={()=>navigate('/contactus')}>
+              <h5 style={{margin:'0px',textAlign:'center',fontWeight:'600'}}>Contact Us</h5>
               </Button>
             <div className="icons">
               {/* <img src={image01} style={{
@@ -124,7 +124,7 @@ function Footer() {
               <img src={image9} />
             </div>
             <div className="fluxora_footer">
-                  <h4 style={{color:'white',fontWeight:'600',fontFamily:'monospace',textAlign:'end'}}>English version</h4>
+                  <h4 style={{color:'white',fontWeight:'500',textAlign:'end'}} className="footer_english">English version</h4>
                 </div>
             <div className="language-select" style={{margin:'10px 0px'}}>
               <div className="d-flex justify-content-end align-items-center language-select-root">

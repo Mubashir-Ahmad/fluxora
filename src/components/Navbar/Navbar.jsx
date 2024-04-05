@@ -16,11 +16,10 @@ function Navbar() {
     navigate("/contactus");
     setActiveButton(button);
   };
-  console.log("hello", location.search);
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <div className="container">
+        <div className="container-fluid" style={{width:'85%'}}>
           <Link className="navbar-brand" to="/">
             <img src={image1} alt="Logo" />
           </Link>
@@ -39,7 +38,7 @@ function Navbar() {
             className="collapse navbar-collapse custom-collapse"
             id="navbarText"
           >
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 " style={{alignItems:'baseline'}}>
               <li className="nav-item">
                 {/* <Link
                   className={`nav-link ${activeButton === "AI" && "active"}`}
@@ -115,6 +114,7 @@ function Navbar() {
                   to="/blog"
                   onClick={() => handleButtonClick("Blogs")}
                 >
+                 
                 Blogs
                 </Link>
               </li>
@@ -125,9 +125,9 @@ function Navbar() {
                     activeButton === "Light" && "active"
                   }`}
                   onClick={() => handleButtonClick("Light")}
-                  style={{fontWeight:'500'}}
+                  style={{width:'100%',height:'39px'}}
                 >
-                <h5 style={{margin:'0px',textAlign:'center',fontWeight:'700'}}>Contact Us</h5>
+                <h5 className="navbar_btn" style={{margin:'0px',textAlign:'center',fontWeight:'500'}}>Contact Us</h5>
                 </button>
               </li>
             </ul>

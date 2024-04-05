@@ -2,11 +2,16 @@
 .h2{
     color: white;
 }
- 
+ .nav-link{
+  color: white;
+ }
   .nav-item{
     text-align: left;
     padding-left: 35px;
     line-height: 30px;
+  }
+  .navbar_btn{
+    font-family: "Plus Jakarta Sans", sans-serif;
   }
   .navbar-hidden {
     

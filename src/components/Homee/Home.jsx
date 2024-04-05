@@ -154,13 +154,15 @@ function Home() {
           </div>
           <div className="col-lg" style={{paddingLeft: '10px'}} >
             <div className="fluxora_tech .upersection1_imgg" style={{display:"flex",flexDirection:'column',justifyContent:'flex-start'}}>
-            <div style={{borderLeft:'solid 4px #1BACD1',marginTop:'10px'}}>
-              <h1 style={{color:'#1BACD1',fontSize:'39px',textAlign:'left',fontWeight:'600',paddingLeft:'30px' }}className="lop">Fluxora</h1>
+            
+            <div style={{marginTop:'10px'}}>
+              <h1 style={{borderLeft:'solid 5px #1BACD1',color:'#1BACD1',textAlign:'left',fontWeight:'600',paddingLeft:'30px',zIndex:'999',position:"relative" }}className="lop">Fluxora</h1>
             </div>
-              <p style={{color:'#1BACD1',fontSize:'22px',textAlign:'left',paddingLeft:'33px'}} className="loop_1">Technology</p>
-          <h2 style={{color:'white',fontSize:'22px',fontWeight:'500',textAlign:'justify',marginTop:'15px',paddingLeft:'30px'}} className="opensans">Welcome to <span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora</span>, where innovation meets tradition to forge the future.</h2>
-        <p style={{color:'white',fontSize:'22px',textAlign:'justify',fontWeight:'500',margin:'10px 0px' ,paddingLeft:'30px'} } className="opensans">At <span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora</span>, we believe in challenging the status quo to deliver unique, cutting-edge solutions in AI, Web3, and Content Strategy.</p>
-        <p style={{color:'white',fontSize:'22px',textAlign:'justify',fontWeight:'500',paddingLeft:'30px'}} className="opensans" >Our mission is to empower businesses to navigate the ever-evolving digital landscape with confidence. Join us on a journey of transformation and let's redefine what's possible together.</p>    
+              <p style={{color:'#1BACD1',fontSize:'22px',textAlign:'left',paddingLeft:'33px',zIndex:'999',position:"relative"}} className="loop_1">TECHNOLOGY</p>
+          <h2 style={{color:'white',fontSize:'22px',fontWeight:'600',textAlign:'justify',margin:'15px 0px',paddingLeft:'30px',zIndex:'999',position:"relative"}} className="opensans">Welcome to <span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora</span>, where innovation meets tradition to forge the future.</h2>
+        <p style={{color:'white',fontSize:'22px',textAlign:'justify',fontWeight:'600',margin:'15px 0px' ,paddingLeft:'30px',zIndex:'999',position:"relative"} } className="opensans">At <span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora</span>, we believe in challenging the status quo to deliver unique, cutting-edge solutions in AI, Web3, and Content Strategy.</p>
+        <p style={{color:'white',fontSize:'22px',textAlign:'justify',fontWeight:'600',margin:'15px 0px',paddingLeft:'30px',zIndex:'999',position:"relative"}} className="opensans" >Our mission is to empower businesses to navigate the ever-evolving digital landscape with confidence. Join us on a journey of transformation and let's redefine what's possible together.</p>
+        <p style={{color:'white',fontSize:'22px',textAlign:'justify',fontWeight:'600',margin:'5px 0px',paddingLeft:'30px',zIndex:'999',position:"relative"}} className="opensans" ><span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora</span> is not just embracing the future; it is creating it.</p>    
         <Button
               type="button"
               className="btn btn-light fluxora_btn"
@@ -168,6 +170,7 @@ function Home() {
             >
               <p className="opensans" style={{margin:'0px',textAlign:'center',color:'white',letterSpacing:2}}>LEARN MORE</p>
             </Button>
+          
           </div>
           </div>
         </div>
@@ -181,7 +184,7 @@ function Home() {
           isBottomAnimationVisible ? "slide-iin" : ""
         }`}
         style={{
-          width:'90%',
+          width:'87%',
           paddingTop:'50px'
           // , paddingLeft:'40px',
           // paddingRight:'40px'
@@ -202,7 +205,7 @@ function Home() {
           <span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora </span>is not just embracing the future; it is creating it.
           </p>
         </div>
-        <div className="row">
+        <div className="row" style={{marginTop:'35px'}}>
           <div className="col-lg ourstory">
             {/* <p className="upersection1_content_SideB_P">{t("first_content")}</p> */}
             <p className="upersection1_content_SideB_P service_ai_heading"><span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora's</span> journey began with a vision to create change over time. Founded by a team of visionaries passionate about technology and innovation, our foundation is built on a relentless pursuit of innovation, aiming to not only meet but exceed the expectations of the digital era and pave the way for groundbreaking achievements.</p>
@@ -220,41 +223,51 @@ function Home() {
             <img src={image3} className="upersection1_img" />
           </div>
         </div>
-          <div className="row" style={{width:'97%',paddingTop:'10%'}}>
+          <div className="row" style={{width:'100%',paddingTop:'10%'}}>
             <div className="col-lg" style={{marginTop:'10px'}}>
               <div style={{borderLeft:'solid 4px #1BACD1',marginTop:'10px'}}>
                 <h2 style={{color:'white',fontWeight:'500',position:'relative',zIndex:999,fontSize:'35px',textAlign:'justify',marginLeft:'25px'}} className="lop">
                 We work with big and small companies
                 </h2>
               </div>
-              <h3 className="service_ai" style={{color: '#A9A7B0',lineHeight:'2',margin:'30px 10px 10px 27px',fontSize:'22px',fontWeight:'500',position:'relative',zIndex:999,textAlign:'justify'}}>
+              <h3 className="service_ai" style={{width:'85%',color: '#A9A7B0',lineHeight:'2',margin:'30px 10px 10px 27px',fontSize:'22px',fontWeight:'500',position:'relative',zIndex:999,textAlign:'justify'}}>
               At <span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora</span>, we pride ourselves on our versatile expertise and our ability to cater to the needs of both large enterprises and small businesses. Our proficiency in various domains  is reflected in our success rates:
               </h3>
-              <h3 className="service_ai" style={{color: '#A9A7B0',lineHeight:'2',margin:'30px 10px 10px 27px',fontSize:'22px',textAlign:'justify',fontWeight:'500',position:'relative',zIndex:999}}>
+              <h3 className="service_ai" style={{width:'85%',color: '#A9A7B0',lineHeight:'2',margin:'30px 10px 10px 27px',fontSize:'22px',textAlign:'justify',fontWeight:'500',position:'relative',zIndex:999}}>
               Partner with <span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora</span>, where expertise meets excellence, regardless of the size of your business.
               </h3>
             </div>
             <div className="col-lg" style={{marginTop:'10px'}}>
+              <div className="progress_box">
                   <div className="progress_bar">
+                    <div className="progress_barr">
                     <p>AI DEVELOPMENT</p>
                     <p>92%</p>
-                  </div>
+                    </div>
             <ProgressBar variant="success" now={90} />
+                  </div>
             <div className="progress_bar">
+            <div className="progress_barr">
                     <p>INFORMATION ARCHITECTURE</p>
                     <p>98%</p>
                   </div>
             <ProgressBar variant="info" now={98} />
+                  </div>
             <div className="progress_bar">
+            <div className="progress_barr">
                     <p>USER EXPERIENCES</p>
                     <p>95%</p>
               </div>
             <ProgressBar variant="warning" now={95} />
+              </div>
             <div className="progress_bar">
+            <div className="progress_barr">
                     <p>USER INTERFACE</p>
                     <p>88%</p>
                   </div>
             <ProgressBar variant="danger" now={88} />
+                  </div>
+            </div>
             </div>
           </div>
       </div>
@@ -266,7 +279,7 @@ function Home() {
           <div className="row" style={{ justifyContent: "center" }}>
             <div className="col-lg uppersection3_box1">
               <h5 className="service_ai_heading">Content Strategy</h5>
-              <p className="service_ai" style={{color:'white',fontSize:'17px',textAlign:'justify',fontWeight:'500'}}>In a world flooded with information, Fluxora crafts content that cuts through the noise. Our strategic approach ensures your message not only reaches but resonates with your audience, driving engagement and fostering lasting connections. Let's tell your story in a way that captivates and convinces.</p>
+              <p className="service_ai" style={{color:'#a6abab',fontSize:'17px',textAlign:'justify',fontWeight:'500',padding:'16px 0px'}}>In a world flooded with information, Fluxora crafts content that cuts through the noise. Our strategic approach ensures your message not only reaches but resonates with your audience, driving engagement and fostering lasting connections. Let's tell your story in a way that captivates and convinces.</p>
               <img src={image9} />
               <div className="overlay">
                 <div className="overlay-content">
@@ -297,7 +310,7 @@ function Home() {
             </div>
             <div className="col-lg uppersection3_box1">
               <h5 className="service_ai_heading">AI</h5>
-              <p className="service_ai" style={{color:'white',fontSize:'17px',textAlign:'justify',fontWeight:'500'}}>At Fluxora, AI is more than just technology; it's the key to unlocking unprecedented opportunities for growth and innovation. Our AI solutions are designed to transform complex challenges into simple solutions, optimizing operations and enhancing decision-making processes. Embrace AI with Fluxora and lead the charge in your industry.</p>
+              <p className="service_ai" style={{color:'#a6abab',fontSize:'17px',textAlign:'justify',padding:'16px 0px',fontWeight:'500'}}>At Fluxora, AI is more than just technology; it's the key to unlocking unprecedented opportunities for growth and innovation. Our AI solutions are designed to transform complex challenges into simple solutions, optimizing operations and enhancing decision-making processes. Embrace AI with Fluxora and lead the charge in your industry.</p>
               <img src={image9} />
               <div className="overlay">
                 <div className="overlay-content">
@@ -318,7 +331,7 @@ function Home() {
             <div className="col-lg uppersection3_box1">
               <h5 className="service_ai_heading">Web3.0</h5>
 
-              <p style={{color:'white',fontSize:'17px',textAlign:'justify',fontWeight:'500',}} className="service_ai">Step into the future with Fluxora's Web3 services, where decentralization opens up a new realm of possibilities. From blockchain to digital assets, our expertise empowers clients to navigate the Web3 space confidently. Whether it's launching an NFT project or integrating blockchain technology, Fluxora is your gateway to the next digital revolution.</p>
+              <p style={{color:'#a6abab',fontSize:'17px',textAlign:'justify',fontWeight:'500',padding:'16px 0px'}} className="service_ai">Step into the future with Fluxora's Web3 services, where decentralization opens up a new realm of possibilities. From blockchain to digital assets, our expertise empowers clients to navigate the Web3 space confidently. Whether it's launching an NFT project or integrating blockchain technology, Fluxora is your gateway to the next digital revolution.</p>
               <img src={image9} />
               <div className="overlay">
                 <div className="overlay-content">
@@ -367,15 +380,15 @@ function Home() {
       </div>
       <div className="yyy">
       <div className="blog_container">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row" style={{ padding: "65px 0px" }}>
             <h4 className="blog_heading service_ai_heading">Blogs</h4>
           </div>
           <div className="row" style={{ justifyContent: "center" }}>
             <Swiper
               slidesPerView={slidesPerVieww}
-              modules={[Autoplay]}
-              autoplay={{ delay: 5000 }}
+              // modules={[Autoplay]}
+              // autoplay={{ delay: 5000 }}
               className="mySwiper"
             >
               <SwiperSlide>
@@ -603,8 +616,8 @@ function Home() {
             </SwiperSlide> */}
           {/* </Swiper> */}
         </div>
-      </div>
       <Footer />
+      </div>
     </div>
   );
 }
