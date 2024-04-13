@@ -16,7 +16,7 @@ import { useTranslation } from "react-i18next";
 import classNames from "classnames";
 import i18next from "i18next";
 import cookies from "js-cookie";
-import "flag-icon-css/css/flag-icons.min.css";
+// import "flag-icon-css/css/flag-icons.min.css";
 import { Button } from "react-bootstrap";
 function Footer() {
   const navigate = useNavigate()
