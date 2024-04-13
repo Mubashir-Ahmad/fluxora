@@ -89,13 +89,13 @@ function Home() {
 
       // upperSectionRef.current.style.transform = `scale(${scaleValue})`;
 
-      if (scrollValue > 100) {
-        // If the wave has faded away, show the below section
-        belowSectionRef.current.classList.add("fadeIn");
-      } else {
-        // If the wave is still visible, hide the below section
-        belowSectionRef.current.classList.remove("fadeIn");
-      }
+      // if (scrollValue > 100) {
+      //   // If the wave has faded away, show the below section
+      //   belowSectionRef.current.classList.add("fadeIn");
+      // } else {
+      //   // If the wave is still visible, hide the below section
+      //   belowSectionRef.current.classList.remove("fadeIn");
+      // }
     };
     const handleResize = () => {
       if (window.innerWidth < 800) {
@@ -139,30 +139,32 @@ function Home() {
         </div>
         <h3 className="uppersection_heading">Fluxora</h3>
       </div>
+           
       <div
-        ref={(node) => {
-          bottomRef.current = node;
-          belowSectionRef.current = node;
-        }}
-        className={`bottom-animation container-fluid ${
-          isBottomAnimationVisible ? "slide-iin" : ""
-        }`}
+        // ref={(node) => {
+        //   bottomRef.current = node;
+        //   belowSectionRef.current = node;
+        // }}
+        className="container-fluid"
+        style={{
+          paddingTop:'50px'
+            }}
       >
          <div className="row fluxora_technology">
           <div className="col-lg" style={{paddingTop:'10px'}}>
           <img src={image13} className="fluxora_technology_img"/>
           </div>
           <div className="col-lg" style={{paddingLeft: '10px'}} >
-            <div className="fluxora_tech .upersection1_imgg" style={{display:"flex",flexDirection:'column',justifyContent:'flex-start'}}>
+            <div className="fluxora_tech .upersection1_imgg" style={{display:"flex",flexDirection:'column',justifyContent:'flex-start'}}>s
             
             <div style={{marginTop:'10px'}}>
               <h1 style={{borderLeft:'solid 5px #1BACD1',color:'#1BACD1',textAlign:'left',fontWeight:'600',paddingLeft:'30px',zIndex:'999',position:"relative" }}className="lop">Fluxora</h1>
             </div>
               <p style={{color:'#1BACD1',fontSize:'22px',textAlign:'left',paddingLeft:'33px',zIndex:'999',position:"relative"}} className="loop_1">TECHNOLOGY</p>
-          <h2 style={{color:'white',fontSize:'22px',fontWeight:'600',textAlign:'justify',margin:'15px 0px',paddingLeft:'30px',zIndex:'999',position:"relative"}} className="opensans">Welcome to <span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora</span>, where innovation meets tradition to forge the future.</h2>
-        <p style={{color:'white',fontSize:'22px',textAlign:'justify',fontWeight:'600',margin:'15px 0px' ,paddingLeft:'30px',zIndex:'999',position:"relative"} } className="opensans">At <span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora</span>, we believe in challenging the status quo to deliver unique, cutting-edge solutions in AI, Web3, and Content Strategy.</p>
-        <p style={{color:'white',fontSize:'22px',textAlign:'justify',fontWeight:'600',margin:'15px 0px',paddingLeft:'30px',zIndex:'999',position:"relative"}} className="opensans" >Our mission is to empower businesses to navigate the ever-evolving digital landscape with confidence. Join us on a journey of transformation and let's redefine what's possible together.</p>
-        <p style={{color:'white',fontSize:'22px',textAlign:'justify',fontWeight:'600',margin:'5px 0px',paddingLeft:'30px',zIndex:'999',position:"relative"}} className="opensans" ><span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora</span> is not just embracing the future; it is creating it.</p>    
+          <h2 style={{color:'white',fontSize:'22px',fontWeight:'600',textAlign:'justify',margin:'15px 0px',paddingLeft:'30px',zIndex:'999',position:"relative"}} className="opensans welcome_box">Welcome to <span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora</span>, where innovation meets tradition to forge the future.</h2>
+        <p style={{color:'white',fontSize:'22px',textAlign:'justify',fontWeight:'600',margin:'15px 0px' ,paddingLeft:'30px',zIndex:'999',position:"relative"} } className="opensans welcome_box">At <span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora</span>, we believe in challenging the status quo to deliver unique, cutting-edge solutions in AI, Web3, and Content Strategy.</p>
+        <p style={{color:'white',fontSize:'22px',textAlign:'justify',fontWeight:'600',margin:'15px 0px',paddingLeft:'30px',zIndex:'999',position:"relative"}} className="opensans welcome_box" >Our mission is to empower businesses to navigate the ever-evolving digital landscape with confidence. Join us on a journey of transformation and let's redefine what's possible together.</p>
+        <p style={{color:'white',fontSize:'22px',textAlign:'justify',fontWeight:'600',margin:'5px 0px',paddingLeft:'30px',zIndex:'999',position:"relative"}} className="opensans welcome_box" ><span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora</span> is not just embracing the future; it is creating it.</p>    
         <Button
               type="button"
               className="btn btn-light fluxora_btn"
@@ -176,13 +178,11 @@ function Home() {
         </div>
         </div>
       <div
-        ref={(node) => {
-          bottomRef.current = node;
-          belowSectionRef.current = node;
-        }}
-        className={`bottom-animation container-fluid ${
-          isBottomAnimationVisible ? "slide-iin" : ""
-        }`}
+        // ref={(node) => {
+        //   bottomRef.current = node;
+        //   belowSectionRef.current = node;
+        // }}
+        className="container-fluid"
         style={{
           width:'87%',
           paddingTop:'50px'
@@ -230,10 +230,10 @@ function Home() {
                 We work with big and small companies
                 </h2>
               </div>
-              <h3 className="service_ai" style={{width:'85%',color: '#A9A7B0',lineHeight:'2',margin:'30px 10px 10px 27px',fontSize:'22px',fontWeight:'500',position:'relative',zIndex:999,textAlign:'justify'}}>
+              <h3 className="service_ai ourstory_box" style={{width:'85%',color: '#A9A7B0',lineHeight:'2',margin:'30px 10px 10px 27px',fontSize:'22px',fontWeight:'500',position:'relative',zIndex:999,textAlign:'justify'}}>
               At <span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora</span>, we pride ourselves on our versatile expertise and our ability to cater to the needs of both large enterprises and small businesses. Our proficiency in various domains  is reflected in our success rates:
               </h3>
-              <h3 className="service_ai" style={{width:'85%',color: '#A9A7B0',lineHeight:'2',margin:'30px 10px 10px 27px',fontSize:'22px',textAlign:'justify',fontWeight:'500',position:'relative',zIndex:999}}>
+              <h3 className="service_ai ourstory_box" style={{width:'85%',color: '#A9A7B0',lineHeight:'2',margin:'30px 10px 10px 27px',fontSize:'22px',textAlign:'justify',fontWeight:'500',position:'relative',zIndex:999}}>
               Partner with <span style={{ color: "#1bacd1",fontWeight:"600" }}>Fluxora</span>, where expertise meets excellence, regardless of the size of your business.
               </h3>
             </div>

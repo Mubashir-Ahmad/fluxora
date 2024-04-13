@@ -21,7 +21,7 @@ body {
   margin-top: 30px;
   /* object-fit: contain; */
   width: 80%;
-  animation: slideFromRightt 10s ease-in-out;
+  animation: slideFromRightt 4.5s ease-in-out;
   opacity: 0;
 
 }
@@ -72,7 +72,7 @@ body {
   }
   .bottom-animation {
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition:  0.5s ease-in-out;
   }
   .slide-iin{
     opacity: 1;
@@ -479,6 +479,7 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 3%, rgba(19,101,141,1) 100%);
   font-style: normal;
   font-size: 45px;
   color: white;
+  z-index: 999;
 }
 .a_heading2{
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -673,6 +674,13 @@ body{
   .home_img>img{
     width: 80%;
   }
+  .welcome_box{
+    padding-left: 0px !important;
+  }
+  .ourstory_box{
+    width: 100% !important;
+    margin: 0px !important;
+  }
   .heading_content >p {
   margin: 0px;
     right: 0%;
@@ -689,7 +697,8 @@ body{
     width: 90%;
   }
   .uppersection3_box1 {
-    width: 62%;
+    width: 100% !important;
+    padding: 30px 30px !important;
   }
   .uppersection4_box1{
     width: 62%;
@@ -711,6 +720,10 @@ body{
   .fluxora_technology_img{
     width: 75% ;
   }
+  .uppersection3_box1 {
+    width: 100% !important;
+    padding: 25px 15px !important;
+  }
   .upersection1_content_SideA_P2 {
     font-size: 25px;
   }
@@ -725,11 +738,14 @@ body{
   }
   .progress_box{
     width: 100%;
-    padding-left: 20px;
+    padding-left: 0px !important;
+  }
+  .swipper_box1 {
+    width: 93% !important;
   }
 }
 @media screen and (max-width:400px) {
-
+ 
   .upersection1_imgg{
     width: 0%;
   }
